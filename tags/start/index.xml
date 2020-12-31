@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>start on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/start/</link>
+    <link>https://rjourdan.github.io/tags/start/</link>
     <description>Recent content in start on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Fri, 26 Aug 2016 18:00:55 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/start/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2016 18:00:55 +0200</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/start/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is the beginning!</title>
-      <link>http://127.0.0.1:1313/this-is-the-beginning/</link>
+      <link>https://rjourdan.github.io/this-is-the-beginning/</link>
       <pubDate>Fri, 26 Aug 2016 18:00:55 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/this-is-the-beginning/</guid>
+      <guid>https://rjourdan.github.io/this-is-the-beginning/</guid>
       <description>Here we are! That&amp;rsquo;s my my first post!
 After so many years wondering whether it is a good idea or not to write a blog, what writting about, I go for it!</description>
     </item>

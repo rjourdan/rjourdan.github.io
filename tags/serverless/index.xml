@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>serverless on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/serverless/</link>
+    <link>https://rjourdan.github.io/tags/serverless/</link>
     <description>Recent content in serverless on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 01 Aug 2018 15:29:29 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Aug 2018 15:29:29 +0200</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ServerlessConf&#39;18 in San Francisco - Day One</title>
-      <link>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-one/</link>
+      <link>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-one/</link>
       <pubDate>Wed, 01 Aug 2018 15:29:29 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-one/</guid>
+      <guid>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-one/</guid>
       <description>ServerlessConf
 Serverless The creation of an Alexa skill in 2016 was this aha moment I discovered the concept of serverless or more precisely Function as a Service a.</description>
     </item>
     
     <item>
       <title>30 days challenge!</title>
-      <link>http://127.0.0.1:1313/30-days-challenge/</link>
+      <link>https://rjourdan.github.io/30-days-challenge/</link>
       <pubDate>Wed, 01 Aug 2018 04:26:37 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/30-days-challenge/</guid>
+      <guid>https://rjourdan.github.io/30-days-challenge/</guid>
       <description>Today, I took the resolution to go on a 30-day challenge. And it is not about diet :-)
 When was my last post? December 31st!!!!! I have plenty of ideas I want to share, plenty of experience other people could (might?</description>
     </item>
     
     <item>
       <title>Goodbye 2017!</title>
-      <link>http://127.0.0.1:1313/goodbye-2017/</link>
+      <link>https://rjourdan.github.io/goodbye-2017/</link>
       <pubDate>Sun, 31 Dec 2017 22:58:01 +0100</pubDate>
       
-      <guid>http://127.0.0.1:1313/goodbye-2017/</guid>
+      <guid>https://rjourdan.github.io/goodbye-2017/</guid>
       <description>December 31st. There are few hours left before the New Year, kids are having a nap, house is quiet. Probably the right time to reflect upon 2017, another crazy year with so many things that happened.</description>
     </item>
     

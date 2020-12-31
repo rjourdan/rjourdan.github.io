@@ -2,119 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/</link>
+    <link>https://rjourdan.github.io/</link>
     <description>Recent content on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 02 Dec 2020 11:01:07 -0500</lastBuildDate><atom:link href="http://127.0.0.1:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Dec 2020 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing AWS Step Functions integration with Amazon EKS</title>
-      <link>http://127.0.0.1:1313/eks_stepfunction/</link>
+      <link>https://rjourdan.github.io/eks_stepfunction/</link>
       <pubDate>Wed, 02 Dec 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/eks_stepfunction/</guid>
+      <guid>https://rjourdan.github.io/eks_stepfunction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Riverbed SD-WAN Advanced Routing capabilities</title>
-      <link>http://127.0.0.1:1313/ex-advanced-routing/</link>
+      <link>https://rjourdan.github.io/ex-advanced-routing/</link>
       <pubDate>Mon, 27 Apr 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-advanced-routing/</guid>
+      <guid>https://rjourdan.github.io/ex-advanced-routing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>What if the future of networking was networkless? part 2</title>
-      <link>http://127.0.0.1:1313/networkless-part2/</link>
+      <link>https://rjourdan.github.io/networkless-part2/</link>
       <pubDate>Sun, 29 Mar 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/networkless-part2/</guid>
+      <guid>https://rjourdan.github.io/networkless-part2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SD-WAN Datacenter Integration</title>
-      <link>http://127.0.0.1:1313/ex-dc-integration/</link>
+      <link>https://rjourdan.github.io/ex-dc-integration/</link>
       <pubDate>Wed, 18 Mar 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-dc-integration/</guid>
+      <guid>https://rjourdan.github.io/ex-dc-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SteelConnect EX SD-WAN Architecture Overview</title>
-      <link>http://127.0.0.1:1313/ex-overview/</link>
+      <link>https://rjourdan.github.io/ex-overview/</link>
       <pubDate>Thu, 13 Feb 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-overview/</guid>
+      <guid>https://rjourdan.github.io/ex-overview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>What if the future of networking was networkless? part 1</title>
-      <link>http://127.0.0.1:1313/networkless-part1/</link>
+      <link>https://rjourdan.github.io/networkless-part1/</link>
       <pubDate>Sun, 26 Jan 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/networkless-part1/</guid>
+      <guid>https://rjourdan.github.io/networkless-part1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Connect with Thought Leaders and Peers at ONUG Fall 2018</title>
-      <link>http://127.0.0.1:1313/onug_2018/</link>
+      <link>https://rjourdan.github.io/onug_2018/</link>
       <pubDate>Wed, 10 Oct 2018 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/onug_2018/</guid>
+      <guid>https://rjourdan.github.io/onug_2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Diversity...</title>
-      <link>http://127.0.0.1:1313/about-diversity/</link>
+      <link>https://rjourdan.github.io/about-diversity/</link>
       <pubDate>Tue, 07 Aug 2018 05:22:27 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/about-diversity/</guid>
+      <guid>https://rjourdan.github.io/about-diversity/</guid>
       <description>Diversity is a word we are hearing more and more in the Enterprise world as well as in media. Hopefully for the best, as talking and debating about a social problem is likely to drive progress.</description>
     </item>
     
     <item>
       <title>Kanban - get more things done!</title>
-      <link>http://127.0.0.1:1313/kanban-get-more-things-done/</link>
+      <link>https://rjourdan.github.io/kanban-get-more-things-done/</link>
       <pubDate>Mon, 06 Aug 2018 04:33:00 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/kanban-get-more-things-done/</guid>
+      <guid>https://rjourdan.github.io/kanban-get-more-things-done/</guid>
       <description>Photo by Daria Nepriakhina on Unsplash
 A bit more than 3 years ago when I took the responsibility for a large region with 21 people spread all over the territory, I felt overwhelmed very quickly.</description>
     </item>
     
     <item>
       <title>Career advice and the need for mentoring</title>
-      <link>http://127.0.0.1:1313/career-advice-and-the-need-for-mentoring/</link>
+      <link>https://rjourdan.github.io/career-advice-and-the-need-for-mentoring/</link>
       <pubDate>Sat, 04 Aug 2018 17:16:30 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/career-advice-and-the-need-for-mentoring/</guid>
+      <guid>https://rjourdan.github.io/career-advice-and-the-need-for-mentoring/</guid>
       <description>At the ServerlessConf this week, during the lunch break, one young guy approached me and asked for some career advice: &amp;ldquo;how did you know you wanted to do what you do?</description>
     </item>
     
     <item>
       <title>Network automation - how to start?</title>
-      <link>http://127.0.0.1:1313/network-automation-how-to-start/</link>
+      <link>https://rjourdan.github.io/network-automation-how-to-start/</link>
       <pubDate>Sat, 04 Aug 2018 03:45:56 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/network-automation-how-to-start/</guid>
+      <guid>https://rjourdan.github.io/network-automation-how-to-start/</guid>
       <description>coding&amp;hellip;.
 I don&amp;rsquo;t talk much of my work in this blog and won&amp;rsquo;t go in the details here. In my role Technical Evangelist, one of my mission is the field enablement: transfer of knowledge from engineering, best practices as well as training on &amp;ldquo;adjacent technologies&amp;rdquo; i.</description>
     </item>
     
     <item>
       <title>ServerlessConf&#39;18 in San Francisco - Day Two</title>
-      <link>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-two/</link>
+      <link>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-two/</link>
       <pubDate>Thu, 02 Aug 2018 16:03:20 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-two/</guid>
+      <guid>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-two/</guid>
       <description>ServerlessConf
 So yesterday was Day 2 at the ServerlessConf in San Francisco.
 It started very well with a passionate speaker: Simon Wardley (@swardley), who presented a practical strategic and business approach that leads to Serverless and Functions.</description>
@@ -122,105 +122,105 @@ It started very well with a passionate speaker: Simon Wardley (@swardley), who p
     
     <item>
       <title>ServerlessConf&#39;18 in San Francisco - Day One</title>
-      <link>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-one/</link>
+      <link>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-one/</link>
       <pubDate>Wed, 01 Aug 2018 15:29:29 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-one/</guid>
+      <guid>https://rjourdan.github.io/serverlessconf-18-in-san-francisco-day-one/</guid>
       <description>ServerlessConf
 Serverless The creation of an Alexa skill in 2016 was this aha moment I discovered the concept of serverless or more precisely Function as a Service a.</description>
     </item>
     
     <item>
       <title>30 days challenge!</title>
-      <link>http://127.0.0.1:1313/30-days-challenge/</link>
+      <link>https://rjourdan.github.io/30-days-challenge/</link>
       <pubDate>Wed, 01 Aug 2018 04:26:37 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/30-days-challenge/</guid>
+      <guid>https://rjourdan.github.io/30-days-challenge/</guid>
       <description>Today, I took the resolution to go on a 30-day challenge. And it is not about diet :-)
 When was my last post? December 31st!!!!! I have plenty of ideas I want to share, plenty of experience other people could (might?</description>
     </item>
     
     <item>
       <title>Goodbye 2017!</title>
-      <link>http://127.0.0.1:1313/goodbye-2017/</link>
+      <link>https://rjourdan.github.io/goodbye-2017/</link>
       <pubDate>Sun, 31 Dec 2017 22:58:01 +0100</pubDate>
       
-      <guid>http://127.0.0.1:1313/goodbye-2017/</guid>
+      <guid>https://rjourdan.github.io/goodbye-2017/</guid>
       <description>December 31st. There are few hours left before the New Year, kids are having a nap, house is quiet. Probably the right time to reflect upon 2017, another crazy year with so many things that happened.</description>
     </item>
     
     <item>
       <title>Continous Learning</title>
-      <link>http://127.0.0.1:1313/continous-learning/</link>
+      <link>https://rjourdan.github.io/continous-learning/</link>
       <pubDate>Sun, 02 Jul 2017 15:07:14 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/continous-learning/</guid>
+      <guid>https://rjourdan.github.io/continous-learning/</guid>
       <description>Lean concept I see myself as a Lean Practitioner and I try, as much as I can, to stick to Lean&amp;rsquo;s principles.
 Lean was coined from a book written by James P.</description>
     </item>
     
     <item>
       <title>AWSome!</title>
-      <link>http://127.0.0.1:1313/awsome/</link>
+      <link>https://rjourdan.github.io/awsome/</link>
       <pubDate>Thu, 22 Jun 2017 18:38:01 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/awsome/</guid>
+      <guid>https://rjourdan.github.io/awsome/</guid>
       <description>Today I have passed the AWS Solutions Architect - Associate certification! And two weeks ago, I passed the AWS Developer - Associate certification.
 That&amp;rsquo;s the reason for going back to hibernation again, not easy to manage a demanding career with travels and work to do, whilst having quality time with family then find the time to work on it.</description>
     </item>
     
     <item>
       <title>My first Alexa Skill</title>
-      <link>http://127.0.0.1:1313/my-first-alexa-skill/</link>
+      <link>https://rjourdan.github.io/my-first-alexa-skill/</link>
       <pubDate>Sat, 20 May 2017 15:08:16 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/my-first-alexa-skill/</guid>
+      <guid>https://rjourdan.github.io/my-first-alexa-skill/</guid>
       <description>Back in November 2016, after few weeks enjoying Amazon Echo, I discovered ASK, Alexa Skill Kit i.e. an SDK made available by Amazon to develop your own skills.</description>
     </item>
     
     <item>
       <title>I love you Alexa!</title>
-      <link>http://127.0.0.1:1313/i-love-you-alexa/</link>
+      <link>https://rjourdan.github.io/i-love-you-alexa/</link>
       <pubDate>Sat, 13 May 2017 14:19:49 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/i-love-you-alexa/</guid>
+      <guid>https://rjourdan.github.io/i-love-you-alexa/</guid>
       <description>Last year, I discovered Amazon Echo, an amazing product launched by Amazon. It is a voice-controlled device that is connected and can perform various operations for you like telling the weather forecast, playing your favorite playlist on Spotify (or other services), book an Uber transfer or even a pizza!</description>
     </item>
     
     <item>
       <title>It&#39;s been a while</title>
-      <link>http://127.0.0.1:1313/it-s-been-a-while/</link>
+      <link>https://rjourdan.github.io/it-s-been-a-while/</link>
       <pubDate>Wed, 10 May 2017 22:22:12 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/it-s-been-a-while/</guid>
+      <guid>https://rjourdan.github.io/it-s-been-a-while/</guid>
       <description>It has been a while since I wrote for the last time. Too many things on my plate with family and work. Think of it as a long hibernation.</description>
     </item>
     
     <item>
       <title>Hybrid WAN - my setup</title>
-      <link>http://127.0.0.1:1313/hybrid-wan-my-setup/</link>
+      <link>https://rjourdan.github.io/hybrid-wan-my-setup/</link>
       <pubDate>Mon, 05 Sep 2016 07:46:02 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/hybrid-wan-my-setup/</guid>
+      <guid>https://rjourdan.github.io/hybrid-wan-my-setup/</guid>
       <description>This is the second article of a series covering Hybrid WAN for home office workers.
 After presenting the benefits of the approach, I am now describing my environment and what I put in place to make it work.</description>
     </item>
     
     <item>
       <title>Hybrid wan - drivers &amp; concept</title>
-      <link>http://127.0.0.1:1313/hybrid-wan-drivers-concept/</link>
+      <link>https://rjourdan.github.io/hybrid-wan-drivers-concept/</link>
       <pubDate>Mon, 29 Aug 2016 07:07:57 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/hybrid-wan-drivers-concept/</guid>
+      <guid>https://rjourdan.github.io/hybrid-wan-drivers-concept/</guid>
       <description>This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases).</description>
     </item>
     
     <item>
       <title>This is the beginning!</title>
-      <link>http://127.0.0.1:1313/this-is-the-beginning/</link>
+      <link>https://rjourdan.github.io/this-is-the-beginning/</link>
       <pubDate>Fri, 26 Aug 2016 18:00:55 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/this-is-the-beginning/</guid>
+      <guid>https://rjourdan.github.io/this-is-the-beginning/</guid>
       <description>Here we are! That&amp;rsquo;s my my first post!
 After so many years wondering whether it is a good idea or not to write a blog, what writting about, I go for it!</description>
     </item>

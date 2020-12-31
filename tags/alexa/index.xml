@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alexa on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/alexa/</link>
+    <link>https://rjourdan.github.io/tags/alexa/</link>
     <description>Recent content in Alexa on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Sun, 31 Dec 2017 22:58:01 +0100</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/alexa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Dec 2017 22:58:01 +0100</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/alexa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goodbye 2017!</title>
-      <link>http://127.0.0.1:1313/goodbye-2017/</link>
+      <link>https://rjourdan.github.io/goodbye-2017/</link>
       <pubDate>Sun, 31 Dec 2017 22:58:01 +0100</pubDate>
       
-      <guid>http://127.0.0.1:1313/goodbye-2017/</guid>
+      <guid>https://rjourdan.github.io/goodbye-2017/</guid>
       <description>December 31st. There are few hours left before the New Year, kids are having a nap, house is quiet. Probably the right time to reflect upon 2017, another crazy year with so many things that happened.</description>
     </item>
     
     <item>
       <title>My first Alexa Skill</title>
-      <link>http://127.0.0.1:1313/my-first-alexa-skill/</link>
+      <link>https://rjourdan.github.io/my-first-alexa-skill/</link>
       <pubDate>Sat, 20 May 2017 15:08:16 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/my-first-alexa-skill/</guid>
+      <guid>https://rjourdan.github.io/my-first-alexa-skill/</guid>
       <description>Back in November 2016, after few weeks enjoying Amazon Echo, I discovered ASK, Alexa Skill Kit i.e. an SDK made available by Amazon to develop your own skills.</description>
     </item>
     
     <item>
       <title>I love you Alexa!</title>
-      <link>http://127.0.0.1:1313/i-love-you-alexa/</link>
+      <link>https://rjourdan.github.io/i-love-you-alexa/</link>
       <pubDate>Sat, 13 May 2017 14:19:49 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/i-love-you-alexa/</guid>
+      <guid>https://rjourdan.github.io/i-love-you-alexa/</guid>
       <description>Last year, I discovered Amazon Echo, an amazing product launched by Amazon. It is a voice-controlled device that is connected and can perform various operations for you like telling the weather forecast, playing your favorite playlist on Spotify (or other services), book an Uber transfer or even a pizza!</description>
     </item>
     

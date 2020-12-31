@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>4G on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/4g/</link>
+    <link>https://rjourdan.github.io/tags/4g/</link>
     <description>Recent content in 4G on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Mon, 05 Sep 2016 07:46:02 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/4g/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2016 07:46:02 +0200</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/4g/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hybrid WAN - my setup</title>
-      <link>http://127.0.0.1:1313/hybrid-wan-my-setup/</link>
+      <link>https://rjourdan.github.io/hybrid-wan-my-setup/</link>
       <pubDate>Mon, 05 Sep 2016 07:46:02 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/hybrid-wan-my-setup/</guid>
+      <guid>https://rjourdan.github.io/hybrid-wan-my-setup/</guid>
       <description>This is the second article of a series covering Hybrid WAN for home office workers.
 After presenting the benefits of the approach, I am now describing my environment and what I put in place to make it work.</description>
     </item>

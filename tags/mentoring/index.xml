@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mentoring on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/mentoring/</link>
+    <link>https://rjourdan.github.io/tags/mentoring/</link>
     <description>Recent content in Mentoring on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Sat, 04 Aug 2018 17:16:30 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/mentoring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Aug 2018 17:16:30 +0200</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/mentoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Career advice and the need for mentoring</title>
-      <link>http://127.0.0.1:1313/career-advice-and-the-need-for-mentoring/</link>
+      <link>https://rjourdan.github.io/career-advice-and-the-need-for-mentoring/</link>
       <pubDate>Sat, 04 Aug 2018 17:16:30 +0200</pubDate>
       
-      <guid>http://127.0.0.1:1313/career-advice-and-the-need-for-mentoring/</guid>
+      <guid>https://rjourdan.github.io/career-advice-and-the-need-for-mentoring/</guid>
       <description>At the ServerlessConf this week, during the lunch break, one young guy approached me and asked for some career advice: &amp;ldquo;how did you know you wanted to do what you do?</description>
     </item>
     

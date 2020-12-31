@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>External Content on Tales of a technology enthusiast</title>
-    <link>http://127.0.0.1:1313/tags/external-content/</link>
+    <link>https://rjourdan.github.io/tags/external-content/</link>
     <description>Recent content in External Content on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 02 Dec 2020 11:01:07 -0500</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/external-content/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Dec 2020 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/external-content/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing AWS Step Functions integration with Amazon EKS</title>
-      <link>http://127.0.0.1:1313/eks_stepfunction/</link>
+      <link>https://rjourdan.github.io/eks_stepfunction/</link>
       <pubDate>Wed, 02 Dec 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/eks_stepfunction/</guid>
+      <guid>https://rjourdan.github.io/eks_stepfunction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Riverbed SD-WAN Advanced Routing capabilities</title>
-      <link>http://127.0.0.1:1313/ex-advanced-routing/</link>
+      <link>https://rjourdan.github.io/ex-advanced-routing/</link>
       <pubDate>Mon, 27 Apr 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-advanced-routing/</guid>
+      <guid>https://rjourdan.github.io/ex-advanced-routing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>What if the future of networking was networkless? part 2</title>
-      <link>http://127.0.0.1:1313/networkless-part2/</link>
+      <link>https://rjourdan.github.io/networkless-part2/</link>
       <pubDate>Sun, 29 Mar 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/networkless-part2/</guid>
+      <guid>https://rjourdan.github.io/networkless-part2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SD-WAN Datacenter Integration</title>
-      <link>http://127.0.0.1:1313/ex-dc-integration/</link>
+      <link>https://rjourdan.github.io/ex-dc-integration/</link>
       <pubDate>Wed, 18 Mar 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-dc-integration/</guid>
+      <guid>https://rjourdan.github.io/ex-dc-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SteelConnect EX SD-WAN Architecture Overview</title>
-      <link>http://127.0.0.1:1313/ex-overview/</link>
+      <link>https://rjourdan.github.io/ex-overview/</link>
       <pubDate>Thu, 13 Feb 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/ex-overview/</guid>
+      <guid>https://rjourdan.github.io/ex-overview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>What if the future of networking was networkless? part 1</title>
-      <link>http://127.0.0.1:1313/networkless-part1/</link>
+      <link>https://rjourdan.github.io/networkless-part1/</link>
       <pubDate>Sun, 26 Jan 2020 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/networkless-part1/</guid>
+      <guid>https://rjourdan.github.io/networkless-part1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Connect with Thought Leaders and Peers at ONUG Fall 2018</title>
-      <link>http://127.0.0.1:1313/onug_2018/</link>
+      <link>https://rjourdan.github.io/onug_2018/</link>
       <pubDate>Wed, 10 Oct 2018 11:01:07 -0500</pubDate>
       
-      <guid>http://127.0.0.1:1313/onug_2018/</guid>
+      <guid>https://rjourdan.github.io/onug_2018/</guid>
       <description></description>
     </item>
     
