@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HomeLab on Tales of a technology enthusiast</title>
+    <link>http://127.0.0.1:1313/tags/homelab/</link>
+    <description>Recent content in HomeLab on Tales of a technology enthusiast</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Romain Jourdan - All rights reserved</copyright>
+    <lastBuildDate>Mon, 29 Aug 2016 07:07:57 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hybrid wan - drivers &amp; concept</title>
+      <link>http://127.0.0.1:1313/hybrid-wan-drivers-concept/</link>
+      <pubDate>Mon, 29 Aug 2016 07:07:57 +0200</pubDate>
+      
+      <guid>http://127.0.0.1:1313/hybrid-wan-drivers-concept/</guid>
+      <description>This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases).</description>
+    </item>
+    
+  </channel>
+</rss>

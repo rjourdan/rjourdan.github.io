@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="icon" href="/logo.png">
+	
+
+	
+		<title>Hybrid wan - drivers &amp; concept | Tales of a technology enthusiast</title>
+	
+	
+	
+
+	
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hybrid wan - drivers &amp; concept"/>
+<meta name="twitter:description" content="This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases)."/>
+
+		<meta property="og:title" content="Hybrid wan - drivers &amp; concept" />
+<meta property="og:description" content="This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://127.0.0.1:1313/hybrid-wan-drivers-concept/" />
+<meta property="article:published_time" content="2016-08-29T07:07:57+02:00" />
+<meta property="article:modified_time" content="2016-08-29T07:07:57+02:00" />
+
+	
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://127.0.0.1:1313">
+
+            
+            <img src="/logo.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/me">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="navbar-social">
+          
+          <a href="https://twitter.com/rjourdan_net"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://github.com/rjourdan"><i class="fab fa-github social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://linkedin.com/in/rjourdan"><i class="fab fa-linkedin social-icon" aria-hidden="true"></i></a>
+          
+          
+          
+          <a href="https://www.medium.com/@rjourdan"><i class="fab fa-medium social-icon" aria-hidden="true"></i></a>
+          
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+
+<div class="main-content">
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Hybrid%20wan%20-%20drivers%20%26%20concept&url=http%3a%2f%2f127.0.0.1%3a1313%2fhybrid-wan-drivers-concept%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=http%3a%2f%2f127.0.0.1%3a1313%2fhybrid-wan-drivers-concept%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>
+    </ul>
+
+    
+</div>
+</div>
+      
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          
+          
+          
+          
+          <div class="row post-top-meta">
+            <div class='d-none d-md-block' style='width: 95px;'>
+              <img class="author-thumb" src="/images/author.jpg"
+                alt="Romain Jourdan">
+            </div>
+            <div class="col-xs-6 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+              <a target="_blank" class="link-dark">Romain Jourdan</a><br>
+              <span class="author-description">
+                Owner of this blog<br>
+                <i class="far fa-star"></i>
+                Aug 29, 2016
+                <i class="far fa-clock clock"></i>
+                
+              3 min read
+              
+              </span>
+            </div>
+          </div>
+          
+          
+          
+          
+          <h1 class="posttitle">Hybrid wan - drivers &amp; concept</h1>
+        </div>
+
+        
+        
+        
+
+        
+        <div class="article-post">
+          <p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_c5cf67_teleworker.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_c5cf67_teleworker.jpg" alt="Hybrid wan - drivers &amp; concept"></a></p>
+<p>This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases). We will discuss:</p>
+<ul>
+<li>Drivers &amp; concept</li>
+<li><a href="http://www.rjourdan.net/2016/09/hybrid-wan-my-setup.html">My setup</a></li>
+<li>Implementation of a basic solution based on open-source projects</li>
+<li>The need for a good QoS scheduler</li>
+<li>How to configure a application based solution</li>
+<li>From Hybrid-WAN to SD-WAN</li>
+</ul>
+<h2 id="the-trend"><strong>The trend</strong></h2>
+<p>With the emergence of Cloud and Software as a Service (SaaS) solution on one hand like Microsoft Office365 and its suite (Exchange Online, Sharepoint Online, Onedrive…), Dropbox, Box, etc… and on the other hand rich content like video (YouTube, Vimeo, Udemy…), there is a never ending need for more bandwidth.</p>
+<p>In the enterprise market, where MPLS offered by Telcos Service providers (such as British Telecom, Orange Business Services, Verizon, AT&amp;T…) used to be the connectivity by default, we have been seeing for already 6 years a new trend. In addition to costly MPLS lines, companies have implemented local internet breakout - in most cases DSL connection.</p>
+<p>DSL is considered as offering much more bandwidth for much cheaper price than MPLS circuit. It is agreed that those Internet connections are not offered with enterprise grade SLAs nor guaranteed bandwidth and are potentially a security threat (not a private network!). But still, it virtually increases the &ldquo;pipe&rdquo; and offer resiliency of the network service for low cost.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_118797_hybrid-wan-bigger-pipe.png"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_118797_hybrid-wan-bigger-pipe.png" alt="Hybrid WAN makes bigger pipe"></a>Hybrid WAN makes bigger pipe</p>
+<p>That diversity of network connectivity is called Hybrid WAN. Mixing different media such as leased lines, MPLS, aDSL/sDSL/xDSL, 4G/LTE or Satellite is the essence of it.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_cab714_hybrid-wan-cloud.png"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_cab714_hybrid-wan-cloud.png" alt="Hybrid WAN & Cloud"></a>Hybrid WAN &amp; Cloud</p>
+<h2 id="routing-considerations"><strong>Routing considerations</strong></h2>
+<p>Complex routing rules are configured to define how traffic is steered. The model that I usually see is as follows:</p>
+<ul>
+<li>Business critical applications on the most stable connection (MPLS for example)</li>
+<li>Non critical and bandwidth hungry traffic (email, file sharing, backup…) offloaded over cheap Internet and encrypted via a VPN tunnel</li>
+<li>Internet traffic (including SaaS) using the local breakout.</li>
+</ul>
+<p>In particular, in this context, what makes this setup complex is the return path. How to make sure that once the server answers request from remote client, the traffic will go back on the right side…. Will a stateful firewall be happy with asymmetric routing? Unlikely&hellip;</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_ce6333_routing-considerations.png"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160829/ob_ce6333_routing-considerations.png" alt="routing considerations"></a>routing considerations</p>
+<p>But let&rsquo;s park this for now as this is relevant for teleworkers. We want to focus on the benefits of Hybrid WAN for Home office worker, not technical details for Enterprise network&hellip;</p>
+<h2 id="why-hybrid-wan-for-teleworkers"><strong>Why Hybrid WAN for teleworkers?</strong></h2>
+<p>I have been working mainly from home for 2 years now. What frustrates me the most is the inconsistency of the service (limited bandwidth, dropping from time to time and resiliency) for my public DSL connection.</p>
+<p>Indeed, since I moved from down town to the suburb area, I can&rsquo;t benefit anymore from FTTH and its amazing symmetric +100M BW.</p>
+<p>When all conditions are met (not snowing, moon is full, I prayed the night before…), I can now manage to get 8M download and a ridiculous 1M for the upload. And if something goes wrong with the line, I am stuck!</p>
+<p>Another interesting factor is that kids and wife can be around. They consume as well &ldquo;my&rdquo; bandwidth with services like Netflix, Youtube, Facebook, Spotify and other recreative applications (hey I am working!).</p>
+<p>So very quickly I decided to go for Hybrid WAN at home!</p>
+
+        </div>
+
+        
+        <div class="after-post-tags">
+          <ul class="tags">
+            
+            <li>
+              <a href="/tags/teleworker">Teleworker</a>
+            </li>
+            
+            <li>
+              <a href="/tags/hybridwan">HybridWAN</a>
+            </li>
+            
+            <li>
+              <a href="/tags/homeoffice">HomeOffice</a>
+            </li>
+            
+            <li>
+              <a href="/tags/homelab">HomeLab</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+          
+          <a class="d-block col-md-6" href="http://127.0.0.1:1313/hybrid-wan-my-setup/"> &laquo; Hybrid WAN - my setup</a>
+          
+          
+          <a class="d-block col-md-6 text-lg-right" href="http://127.0.0.1:1313/this-is-the-beginning/">This is the beginning! &raquo;</a>
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+            </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Romain Jourdan - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

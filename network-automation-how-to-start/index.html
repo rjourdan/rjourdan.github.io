@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="icon" href="/logo.png">
+	
+
+	
+		<title>Network automation - how to start? | Tales of a technology enthusiast</title>
+	
+	
+	
+
+	
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Network automation - how to start?"/>
+<meta name="twitter:description" content="coding&hellip;.
+I don&rsquo;t talk much of my work in this blog and won&rsquo;t go in the details here. In my role Technical Evangelist, one of my mission is the field enablement: transfer of knowledge from engineering, best practices as well as training on &ldquo;adjacent technologies&rdquo; i."/>
+
+		<meta property="og:title" content="Network automation - how to start?" />
+<meta property="og:description" content="coding&hellip;.
+I don&rsquo;t talk much of my work in this blog and won&rsquo;t go in the details here. In my role Technical Evangelist, one of my mission is the field enablement: transfer of knowledge from engineering, best practices as well as training on &ldquo;adjacent technologies&rdquo; i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://127.0.0.1:1313/network-automation-how-to-start/" />
+<meta property="article:published_time" content="2018-08-04T03:45:56+02:00" />
+<meta property="article:modified_time" content="2018-08-04T03:45:56+02:00" />
+
+	
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://127.0.0.1:1313">
+
+            
+            <img src="/logo.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/me">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="navbar-social">
+          
+          <a href="https://twitter.com/rjourdan_net"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://github.com/rjourdan"><i class="fab fa-github social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://linkedin.com/in/rjourdan"><i class="fab fa-linkedin social-icon" aria-hidden="true"></i></a>
+          
+          
+          
+          <a href="https://www.medium.com/@rjourdan"><i class="fab fa-medium social-icon" aria-hidden="true"></i></a>
+          
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+
+<div class="main-content">
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Network%20automation%20-%20how%20to%20start%3f&url=http%3a%2f%2f127.0.0.1%3a1313%2fnetwork-automation-how-to-start%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=http%3a%2f%2f127.0.0.1%3a1313%2fnetwork-automation-how-to-start%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>
+    </ul>
+
+    
+</div>
+</div>
+      
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          
+          
+          
+          
+          <div class="row post-top-meta">
+            <div class='d-none d-md-block' style='width: 95px;'>
+              <img class="author-thumb" src="/images/author.jpg"
+                alt="Romain Jourdan">
+            </div>
+            <div class="col-xs-6 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+              <a target="_blank" class="link-dark">Romain Jourdan</a><br>
+              <span class="author-description">
+                Owner of this blog<br>
+                <i class="far fa-star"></i>
+                Aug 4, 2018
+                <i class="far fa-clock clock"></i>
+                
+              4 min read
+              
+              </span>
+            </div>
+          </div>
+          
+          
+          
+          
+          <h1 class="posttitle">Network automation - how to start?</h1>
+        </div>
+
+        
+        
+        
+
+        
+        <div class="article-post">
+          <p><a href="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_5c9981_photo-1487058792275-0ad4aaf24ca7.jpeg"><img src="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_5c9981_photo-1487058792275-0ad4aaf24ca7.jpeg" alt="coding&hellip;."></a>coding&hellip;.</p>
+<p>I don&rsquo;t talk much of my work in this blog and won&rsquo;t go in the details here. In my role Technical Evangelist, one of my mission is the field enablement: transfer of knowledge from engineering, best practices as well as training on &ldquo;adjacent technologies&rdquo; i.e. technologies of the ecosystem our products fit in.</p>
+<p>One of my current activity is to build a curriculum to our Solutions Engineers on Network Automation.</p>
+<p>Network automation has been very trendy and it is highly recommended for all people working in the networking field so to save time on repetitive operational tasks and have more &ldquo;bandwidth&rdquo; to take care of new projects.</p>
+<p>You will find an endless list of websites offering you courses on the topic. And I am not going to start one myself. I have added a list of references at the end of this post for your convenience.</p>
+<p>Reality is that programming is frightening for many of us networking people and there are many strange names: Ansible, Python, NetConf, YAML, REST API, Git, CI/CD&hellip; So where do we start?</p>
+<h2 id="easy-peasy">Easy Peasy&hellip;.</h2>
+<p>Ansible is super powerful and you can find a lot of cool modules. I believe the level of complexity is pretty high though; to be able to achieve what you really want, you will spend a lot of time and the learning curve is not that fast&hellip;</p>
+<p>I would start with Python. You will find a big community to help you on that and it is a language pretty straightforward. You will learn quickly and your sensation of achievement will be much greater.</p>
+<p>Many network engineers go crazy and believe they can quickly become software engineers. Probably not&hellip;</p>
+<p>There is no need to download powerful IDE like <a href="https://code.visualstudio.com">Microsoft VisualStudio</a> or <a href="http://www.eclipse.org/downloads/">Eclipse</a> (download the <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">Python module</a>).</p>
+<p>I have a software engineering background and I have always been programming so I have been using those tools. I recommend you to get those tools after several months of practice.</p>
+<p>I recently discovered <a href="https://jupyter.org">Jupyter notebooks</a> and this is what I highly recommend our Field to use.</p>
+<p>It is a great tool to learn and play step by step. You can install it on your machine or better you download a Docker container to play with it!</p>
+<p>As you probably know, a container is a lightweight Virtual Machine that contains all the packages you need and is running on top of your computer.</p>
+<p>Why running in a contained environment? Because it will make your life sooooooooo much easier. Even more when you start! You will have a fresh environment everytime you want. You don&rsquo;t mess with your laptop&rsquo;s OS and some nice people prepared everything for you. And more importantly, you don&rsquo;t have to become a Docker expert&hellip;.</p>
+<ol>
+<li>First step: install Docker on your system <a href="https://www.docker.com/community-edition#/download">https://www.docker.com/community-edition#/download</a></li>
+<li>Search the image you want to use on Docker&rsquo;s store. This <a href="https://store.docker.com/community/images/jupyter/minimal-notebook">one</a> will do the job.</li>
+<li>Pull the image and start it as explained in the <a href="http://jupyter-docker-stacks.readthedocs.io/en/latest/index.html">documentation</a></li>
+<li>Make sure to start the container with the option -v to mount a volume on your laptop and not lose everything when the container is restarted&hellip;.</li>
+</ol>
+<p><a href="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_294ea8_screen-shot-2018-08-03-at-7-50-04-pm.png"><img src="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_294ea8_screen-shot-2018-08-03-at-7-50-04-pm.png" alt="starting the container and mapping a volume to a folder&hellip;."></a>starting the container and mapping a volume to a folder&hellip;.</p>
+<p>Now you can copy paste the URL into your browser and enjoy working with Jupyter.</p>
+<p>You can upload existing Notebooks that you can find on the Internet, you can start a terminal to get access to the container system and import whatever library you need and finally create a Notebook&hellip;</p>
+<p>So why am I recommending to use Jupyter for beginners?</p>
+<p>The cool thing is that you can mix text and code and execute that code step-by-step checking the result of each operation! This is super powerful when you start learning how to program. You will make very quick progress using that approach.</p>
+<p><a href="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_9fc90d_screen-shot-2018-08-03-at-7-54-42-pm.png"><img src="https://img.over-blog-kiwi.com/2/12/27/68/20180804/ob_9fc90d_screen-shot-2018-08-03-at-7-54-42-pm.png" alt="screenshot of code and text in Jupiter."></a>screenshot of code and text in Jupiter.</p>
+<h2 id="want-to-learn-more-and-start-messing-around">Want to learn more and start messing around?</h2>
+<p>Here is a list of sites you can check on the topic:</p>
+<ul>
+<li><a href="https://packetpushers.net/intro-python-network-automation/">https://packetpushers.net/intro-python-network-automation/</a></li>
+<li><a href="https://packetpushers.net/intro-python-network-automation-part-2/">https://packetpushers.net/intro-python-network-automation-part-2/</a></li>
+<li><a href="http://networktocode.com">http://networktocode.com</a></li>
+<li><a href="https://www.safaribooksonline.com/library/view/network-programmability-and/9781491931240/">https://www.safaribooksonline.com/library/view/network-programmability-and/9781491931240/</a></li>
+<li><a href="https://www.ipspace.net">https://www.ipspace.net</a></li>
+<li><a href="https://www.ansible.com/integrations/networks">https://www.ansible.com/integrations/networks</a></li>
+</ul>
+
+        </div>
+
+        
+        <div class="after-post-tags">
+          <ul class="tags">
+            
+            <li>
+              <a href="/tags/30daychallenge">30daychallenge</a>
+            </li>
+            
+            <li>
+              <a href="/tags/continuousimprovement">ContinuousImprovement</a>
+            </li>
+            
+            <li>
+              <a href="/tags/automation">automation</a>
+            </li>
+            
+            <li>
+              <a href="/tags/python">Python</a>
+            </li>
+            
+            <li>
+              <a href="/tags/networkautomation">NetworkAutomation</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+          
+          <a class="d-block col-md-6" href="http://127.0.0.1:1313/career-advice-and-the-need-for-mentoring/"> &laquo; Career advice and the need for mentoring</a>
+          
+          
+          <a class="d-block col-md-6 text-lg-right" href="http://127.0.0.1:1313/serverlessconf-18-in-san-francisco-day-two/">ServerlessConf&#39;18 in San Francisco - Day Two &raquo;</a>
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+            </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Romain Jourdan - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

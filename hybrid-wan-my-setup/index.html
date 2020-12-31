@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="icon" href="/logo.png">
+	
+
+	
+		<title>Hybrid WAN - my setup | Tales of a technology enthusiast</title>
+	
+	
+	
+
+	
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hybrid WAN - my setup"/>
+<meta name="twitter:description" content="This is the second article of a series covering Hybrid WAN for home office workers.
+After presenting the benefits of the approach, I am now describing my environment and what I put in place to make it work."/>
+
+		<meta property="og:title" content="Hybrid WAN - my setup" />
+<meta property="og:description" content="This is the second article of a series covering Hybrid WAN for home office workers.
+After presenting the benefits of the approach, I am now describing my environment and what I put in place to make it work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://127.0.0.1:1313/hybrid-wan-my-setup/" />
+<meta property="article:published_time" content="2016-09-05T07:46:02+02:00" />
+<meta property="article:modified_time" content="2016-09-05T07:46:02+02:00" />
+
+	
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://127.0.0.1:1313">
+
+            
+            <img src="/logo.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/me">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="navbar-social">
+          
+          <a href="https://twitter.com/rjourdan_net"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://github.com/rjourdan"><i class="fab fa-github social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://linkedin.com/in/rjourdan"><i class="fab fa-linkedin social-icon" aria-hidden="true"></i></a>
+          
+          
+          
+          <a href="https://www.medium.com/@rjourdan"><i class="fab fa-medium social-icon" aria-hidden="true"></i></a>
+          
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+
+<div class="main-content">
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Hybrid%20WAN%20-%20my%20setup&url=http%3a%2f%2f127.0.0.1%3a1313%2fhybrid-wan-my-setup%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=http%3a%2f%2f127.0.0.1%3a1313%2fhybrid-wan-my-setup%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>
+    </ul>
+
+    
+</div>
+</div>
+      
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          
+          
+          
+          
+          <div class="row post-top-meta">
+            <div class='d-none d-md-block' style='width: 95px;'>
+              <img class="author-thumb" src="/images/author.jpg"
+                alt="Romain Jourdan">
+            </div>
+            <div class="col-xs-6 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+              <a target="_blank" class="link-dark">Romain Jourdan</a><br>
+              <span class="author-description">
+                Owner of this blog<br>
+                <i class="far fa-star"></i>
+                Sep 5, 2016
+                <i class="far fa-clock clock"></i>
+                
+              5 min read
+              
+              </span>
+            </div>
+          </div>
+          
+          
+          
+          
+          <h1 class="posttitle">Hybrid WAN - my setup</h1>
+        </div>
+
+        
+        
+        
+
+        
+        <div class="article-post">
+          <p>This is the second article of a series covering Hybrid WAN for home office workers.</p>
+<p>After presenting <a href="http://www.rjourdan.net/2016/08/hybrid-wan-drivers-concept.html">the benefits of the approach</a>, I am now describing my environment and what I put in place to make it work.</p>
+<h1 id="a-second-connectivity"><strong>A second connectivity</strong></h1>
+<p>On top of public ADSL, I had to find another way of getting access to the Internet. Initially, I had in mind to order a new line and order a DSL access with a different service provider. I would have had a similar bandwidth (8M download, 1M upload) and it would have very likely been connected to the same telecom center hence in case of failure, I would have two lines down. Therefore, I decided to test other options.</p>
+<h2 id="satellite">Satellite</h2>
+<p>A colleague of mine recommended Twoway <a href="http://www.tooway.com/">http://www.tooway.com/</a>. I found it interesting: up to 22Mbps download, up to 6M upload.</p>
+<p>What was a bit problematic was obviously the latency: 600-700ms. For sure, packets have to be transmitted up to the space and back again to Earth to the main station that forward finally traffic on Terrestrial links.</p>
+<p>Since I worked for a WAN optimization company, I knew I would have solutions to mitigate this problem at least when accessing Headquarter resources.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_bdb6b2_20160904-114502958-ios.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_bdb6b2_20160904-114502958-ios.jpg" alt="Twoway satellite dish"></a>Twoway satellite dish</p>
+<p>I took the starter pack (modem + Satellite dish) and also subscribed to a 25G data plan offer (40€ per month). Traffic during the night was unlimited (good for some replication jobs, BitTorrent…).</p>
+<p>At this time, it was with Alsatis. They have handed over this business to NordNet in France and they don&rsquo;t have such interesting plan anymore.</p>
+<p>It helped a lot to get much more bandwidth. The high latency was an issue for a comfortable user experience for Web browsing but ok for watching videos (YouTube, NetFlix) or listening to on-line music. Having a bigger pipe helped Netflix to provide HD videos.</p>
+<p>Question was how to steer the traffic intelligently so NetFlix goes on the Satellite uplink. I could have listed all IPs from Netflix but that would have been heavy to implement and maintain. Therefore, my first configuration was quite dumb: I routed based on source IP, the ones from AppleTV or my smartTV.</p>
+<p>Similarly, I listed the few IP addresses of the SSL VPN gateway at HeadQuarter in SanFrancisco and created routes to have this traffic sent over Satellite.</p>
+<p>I must admit that at the end of my contract, I was really fed up with the inconsistency of the service. Between 5pm and 9pm, it was almost unusable . Rest of the time, connection was ok and delivering the missing Mb/s I was looking for with this Hybrid WAN initiative.</p>
+<h1 id="4glte"><strong>4G/LTE</strong></h1>
+<p>Back in June 2016, 4G on my smartphone started to be incredibly fast when I was home.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_a91bea_4g-perf.png"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_a91bea_4g-perf.png" alt="4G performance with nPerf"></a>4G performance with nPerf</p>
+<p>It was time to switch! I checked what 4G routers I could deploy at home to integrate wth my network. I chose the Huawei B315s-22 4G LTE/WiFi.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_008830_huawei-b315s-22.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_008830_huawei-b315s-22.jpg" alt="Huawei B315s-22"></a>Huawei B315s-22</p>
+<p>I subscribed to a <a href="https://www.bouyguestelecom.fr/forfait-internet-mobile">40G data plan</a> for 39€.</p>
+<p>On my &ldquo;Hybrid WAN&rdquo; router (see here after), I replaced the satellite uplink and connected the Huawei router.</p>
+<p>Experience is now far much better. Latency is low, bandwidth much higher. Problem is that I usually consume the 40G data plan before the end of the month. Once it is over, link is rate limited to 128kbps… But still, very good result. Let&rsquo;s wait for unlimited data plan.</p>
+<h2 id="some-words-about-the-4g-router">Some words about the 4G router</h2>
+<p>Huawei is one the major telecom vendors and has a great experience with mobile networks.</p>
+<p>The 4G reception on this router is really good.</p>
+<p>Design is nice but actually I don&rsquo;t really care as the router stays in the basement :-D Oh, you probably wonder why one would do that to get 4G connection. This is because from the basement I have direct access to the garden and installed a <a href="https://www.wifi-shop24.com/4G-/-LTE-Omni-Antenna-12dBi-800/1800/2600MHz-Multiband-Outdoor">4G antenna</a> with <a href="https://www.wifi-shop24.com/Coaxial-Antenna-Cable-4G-5m-CLF200-Twin-N-male-to-SMA-male">cables</a>.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_3d026f_4g-antenna.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_3d026f_4g-antenna.jpg" alt="External 4G antenna"></a>External 4G antenna</p>
+<p>Besides, my &ldquo;datacenter&rdquo; is down there. So it is easier for me to distribute the network.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_26be01_home-lab.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_26be01_home-lab.jpg" alt="Home Lab"></a>Home Lab</p>
+<p>I am missing some &ldquo;basic&rdquo; features like:</p>
+<ul>
+<li>Reporting on the mobile coverage and quality (gain) so to optimize the positioning of the antenna</li>
+<li>Ability to create static routes</li>
+</ul>
+<h1 id="router-firewall"><strong>Router firewall</strong></h1>
+<p>The most important piece for this setup is the router that will be able to connect your LAN and load balance the traffic to two (or more) different connections.</p>
+<p>In addition to routing capabilities, I wanted the router to be a stateful firewall as well so to protect the LAN from the Internet and create a DMZ for the services I want to expose.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_5b54fc_home-network-topology.png"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_5b54fc_home-network-topology.png" alt="Home network topology"></a>Home network topology</p>
+<p>I also wanted something cheap, opensource, green (low consumption) and with 1Gbps ports for the LAN. Being happy about Netgear products, I chose the WNR3500L-100PES.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_617901_netgear-wnr3500l-100pes.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_617901_netgear-wnr3500l-100pes.jpg" alt="Netgear WNR3500L-100PES"></a>Netgear WNR3500L-100PES</p>
+<p>One will argue that there is only one WAN port on that router so why using this device for an hybrid WAN setup? This is true but the community is smart and provides good support.</p>
+<p>I knew the DD-WRT project. They have referenced <a href="http://www.dd-wrt.com/site/support/router-database">many routers</a> so you will find what you need.</p>
+<p>I installed DD-WRT on the gear and followed this <a href="https://www.dd-wrt.com/wiki/index.php/Dual-WAN_for_simple_round-robin_load_equalization">tutorial</a></p>
+<p>In the mean time, I found this <a href="https://www.dd-wrt.com/wiki/index.php/Dual%2C_Triple_%28and_probably_quad%29_WAN_with_multiple_active_WAN_links_and_source_routing">one</a> and although I have not tested it, it looks promising.</p>
+<p>Great results however after few months, I started to miss some advanced features and a nicer GUI for this router-firewall.</p>
+<p>More features meant a need for more power. I found this nice small box on <a href="https://www.amazon.com/Qotom-Q190G4-Celeron-Processor-Barebone/dp/B019Z8T9J0/ref=cm_rdp_product">Amazon</a> for $150 . This great platform can host whatever OS you want and the goal was to find a good opensource solution.</p>
+<p><a href="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_bba015_advanced-router-plateform.jpg"><img src="http://img.over-blog-kiwi.com/2/12/27/68/20160907/ob_bba015_advanced-router-plateform.jpg" alt="Advanced router platform"></a>Advanced router platform</p>
+
+        </div>
+
+        
+        <div class="after-post-tags">
+          <ul class="tags">
+            
+            <li>
+              <a href="/tags/hybridwan">HybridWAN</a>
+            </li>
+            
+            <li>
+              <a href="/tags/4g">4G</a>
+            </li>
+            
+            <li>
+              <a href="/tags/satellite">satellite</a>
+            </li>
+            
+            <li>
+              <a href="/tags/teleworker">Teleworker</a>
+            </li>
+            
+            <li>
+              <a href="/tags/homeoffice">HomeOffice</a>
+            </li>
+            
+            <li>
+              <a href="/tags/router">router</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+          
+          <a class="d-block col-md-6" href="http://127.0.0.1:1313/it-s-been-a-while/"> &laquo; It&#39;s been a while</a>
+          
+          
+          <a class="d-block col-md-6 text-lg-right" href="http://127.0.0.1:1313/hybrid-wan-drivers-concept/">Hybrid wan - drivers &amp; concept &raquo;</a>
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+            </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Romain Jourdan - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

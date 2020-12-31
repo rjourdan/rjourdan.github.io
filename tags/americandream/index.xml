@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AmericanDream on Tales of a technology enthusiast</title>
+    <link>http://127.0.0.1:1313/tags/americandream/</link>
+    <description>Recent content in AmericanDream on Tales of a technology enthusiast</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Romain Jourdan - All rights reserved</copyright>
+    <lastBuildDate>Tue, 07 Aug 2018 05:22:27 +0200</lastBuildDate><atom:link href="http://127.0.0.1:1313/tags/americandream/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Diversity...</title>
+      <link>http://127.0.0.1:1313/about-diversity/</link>
+      <pubDate>Tue, 07 Aug 2018 05:22:27 +0200</pubDate>
+      
+      <guid>http://127.0.0.1:1313/about-diversity/</guid>
+      <description>Diversity is a word we are hearing more and more in the Enterprise world as well as in media. Hopefully for the best, as talking and debating about a social problem is likely to drive progress.</description>
+    </item>
+    
+    <item>
+      <title>Goodbye 2017!</title>
+      <link>http://127.0.0.1:1313/goodbye-2017/</link>
+      <pubDate>Sun, 31 Dec 2017 22:58:01 +0100</pubDate>
+      
+      <guid>http://127.0.0.1:1313/goodbye-2017/</guid>
+      <description>December 31st. There are few hours left before the New Year, kids are having a nap, house is quiet. Probably the right time to reflect upon 2017, another crazy year with so many things that happened.</description>
+    </item>
+    
+  </channel>
+</rss>
