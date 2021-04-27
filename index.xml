@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 02 Dec 2020 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jan 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Ultimate SD-WAN solution</title>
+      <link>https://rjourdan.github.io/ultimate-sdwan/</link>
+      <pubDate>Sat, 02 Jan 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.github.io/ultimate-sdwan/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Introducing AWS Step Functions integration with Amazon EKS</title>
       <link>https://rjourdan.github.io/eks_stepfunction/</link>
