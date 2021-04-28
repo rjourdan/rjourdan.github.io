@@ -17,11 +17,11 @@
 <meta name="twitter:image" content="https://rjourdan.com/aws-container-a2z-intro/cover.jpg"/>
 <meta name="twitter:title" content="AWS Containers a2z - Introduction"/>
 <meta name="twitter:description" content="(Photo by Ian Tayloron Unsplash)
-Why?  Second, containers are really hot on the market and I don&rsquo;t necessarily say that in terms of hype in the tech space but mainly because of the adoption we are seeing."/>
+I have been meaning to write a series of blog posts about building applications using containers on AWS for a while."/>
 
 		<meta property="og:title" content="AWS Containers a2z - Introduction" />
 <meta property="og:description" content="(Photo by Ian Tayloron Unsplash)
-Why?  Second, containers are really hot on the market and I don&rsquo;t necessarily say that in terms of hype in the tech space but mainly because of the adoption we are seeing." />
+I have been meaning to write a series of blog posts about building applications using containers on AWS for a while." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rjourdan.com/aws-container-a2z-intro/" /><meta property="og:image" content="https://rjourdan.com/aws-container-a2z-intro/cover.jpg"/><meta property="article:section" content="" />
 <meta property="article:published_time" content="2021-04-28T11:01:07-05:00" />
@@ -111,6 +111,14 @@ Why?  Second, containers are really hot on the market and I don&rsquo;t necessa
 
 
     
+        <div class="sep">
+        </div>
+        <ul>
+            <li>
+            <a  class="small smoothscroll" href="#disqus_thread"></a>
+            </li>
+        </ul>
+    
 </div>
 </div>
       
@@ -133,7 +141,7 @@ Why?  Second, containers are really hot on the market and I don&rsquo;t necessa
                 Apr 28, 2021
                 <i class="far fa-clock clock"></i>
                 
-              1 min read
+              3 min read
               
               </span>
             </div>
@@ -153,14 +161,20 @@ Why?  Second, containers are really hot on the market and I don&rsquo;t necessa
         <div class="article-post">
           <p><img src="cover.jpg" alt="AWS Containers a2z!">(Photo by <!-- raw HTML omitted -->Ian Taylor<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted -->
 )</p>
-<!-- raw HTML omitted -->
+<p>I have been meaning to write a series of blog posts about building applications using containers on AWS for a while. This is the first of - what I believe will be - a long journey into modern application development. </p>
 <h2 id="why">Why? </h2>
-<!-- raw HTML omitted -->
+<p>First of all, I joined the AWS Container team back in August 2020 to lead the Developer Advocate team so that&rsquo;s part of my job to talk about our services. </p>
 <p>Second, containers are really hot on the market and I don&rsquo;t necessarily say that in terms of hype in the tech space but mainly because of the adoption we are seeing. And there are very good reasons for this. There are a powerful way for developers to package and deploy their applications. They are lightweight and provide a consistent, portable software environment for applications to easily run at scale anywhere.</p>
 <p>Third  -and in fact probably the most important to me- I could not find materials that could guide someone through the process of creating a complex application (i.e. not just a simple <code>'hello-world'</code> demo app but something real, something that would solve real business challenges), navigating through the different options, evaluating trade-offs and deciding the tools to go with. Not everyone needs that type of guidance, nevertheless, I have found enough evidence of Twitter from people looking for that type of content. This is an attempt to fill a gap.</p>
-<!-- raw HTML omitted -->
 <h2 id="how">How?</h2>
-<!-- raw HTML omitted -->
+<p>One of our team&rsquo;s tenets is <em><strong>We stand in the customer&rsquo;s shoes</strong></em>. It means that we are practitioners and we experiment on behalf of our customers. For this exercise, I will put myself in the shoes of a developer in a startup or in an incubator of a larger company whose mission is to build a large scalable logistic application. There will be phases of exploration and testing but rapidly I want to move to build a <em>real product</em> and iterate to deliver value to our fictious customers.</p>
+<p><strong>Disclaimer:</strong> I&rsquo;ll do my best to make the application and the infrastructure as close to a real environment as possible taking in account some of the good practices in the domain. However, the information contained on this blog is for general information purposes only. More details on the <a href="https://rjourdan.com/disclaimer.html">Disclaimer page</a>. Also please add your comments if you believe that something is odd or incorrect, my goal is to help and make it useful.</p>
+<p>For this blog series, I will use the following guiding principles:</p>
+<ul>
+<li>&lsquo;Serverless&rsquo; first: I&rsquo;ll use managed services as much as a I can so to be able to focus on the business logic and  iterate quickly.</li>
+<li>Use the &lsquo;best tool&rsquo;: By that, I mean I don&rsquo;t want to be dogmatic but pragmatic. For example, when using a Lambda function is appropriate, I will not force myself to run a container.</li>
+<li>Make it realistic</li>
+</ul>
 
         </div>
 
@@ -195,6 +209,14 @@ Why?  Second, containers are really hot on the market and I don&rsquo;t necessa
   </div>
   
   
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+                           
+        </div>
+    </div>
+</div>
+
 </div>
 
 
@@ -224,5 +246,6 @@ Why?  Second, containers are really hot on the market and I don&rsquo;t necessa
 
 <script src="/js/mediumish.js"></script>
 
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41fec0b311d0416d9d40333187ce6b34"}'></script>
     </body>
 </html>
