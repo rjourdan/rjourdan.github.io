@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NetworkAutomation on Tales of a technology enthusiast</title>
-    <link>https://rjourdan.github.io/tags/networkautomation/</link>
+    <link>https://rjourdan.com/tags/networkautomation/</link>
     <description>Recent content in NetworkAutomation on Tales of a technology enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Sat, 04 Aug 2018 03:45:56 +0200</lastBuildDate><atom:link href="https://rjourdan.github.io/tags/networkautomation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Aug 2018 03:45:56 +0200</lastBuildDate><atom:link href="https://rjourdan.com/tags/networkautomation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Network automation - how to start?</title>
-      <link>https://rjourdan.github.io/network-automation-how-to-start/</link>
+      <link>https://rjourdan.com/network-automation-how-to-start/</link>
       <pubDate>Sat, 04 Aug 2018 03:45:56 +0200</pubDate>
       
-      <guid>https://rjourdan.github.io/network-automation-how-to-start/</guid>
+      <guid>https://rjourdan.com/network-automation-how-to-start/</guid>
       <description>coding&amp;hellip;.
 I don&amp;rsquo;t talk much of my work in this blog and won&amp;rsquo;t go in the details here. In my role Technical Evangelist, one of my mission is the field enablement: transfer of knowledge from engineering, best practices as well as training on &amp;ldquo;adjacent technologies&amp;rdquo; i.</description>
     </item>
