@@ -141,7 +141,7 @@ I have been meaning to write a series of blog posts about building applications 
                 Apr 28, 2021
                 <i class="far fa-clock clock"></i>
                 
-              3 min read
+              5 min read
               
               </span>
             </div>
@@ -168,13 +168,38 @@ I have been meaning to write a series of blog posts about building applications 
 <p>Third  -and in fact probably the most important to me- I could not find materials that could guide someone through the process of creating a complex application (i.e. not just a simple <code>'hello-world'</code> demo app but something real, something that would solve real business challenges), navigating through the different options, evaluating trade-offs and deciding the tools to go with. Not everyone needs that type of guidance, nevertheless, I have found enough evidence of Twitter from people looking for that type of content. This is an attempt to fill a gap.</p>
 <h2 id="how">How?</h2>
 <p>One of our team&rsquo;s tenets is <em><strong>We stand in the customer&rsquo;s shoes</strong></em>. It means that we are practitioners and we experiment on behalf of our customers. For this exercise, I will put myself in the shoes of a developer in a startup or in an incubator of a larger company whose mission is to build a large scalable logistic application. There will be phases of exploration and testing but rapidly I want to move to build a <em>real product</em> and iterate to deliver value to our fictious customers.</p>
-<p><strong>Disclaimer:</strong> I&rsquo;ll do my best to make the application and the infrastructure as close to a real environment as possible taking in account some of the good practices in the domain. However, the information contained on this blog is for general information purposes only. More details on the <a href="https://rjourdan.com/disclaimer.html">Disclaimer page</a>. Also please add your comments if you believe that something is odd or incorrect, my goal is to help and make it useful.</p>
-<p>For this blog series, I will use the following guiding principles:</p>
+<p><strong>Disclaimer:</strong> I&rsquo;ll do my best to make the application and the infrastructure as close to a real environment as possible taking in account some of the good practices in the domain. However, the information contained on this blog is for general information purposes only. More details on the <a href="https://rjourdan.com/disclaimer.html">Disclaimer page</a>. Be aware of possible costs that would result from following along. Be mindful of the limits of the <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&amp;all-free-tier.sort-order=asc&amp;awsf.Free%20Tier%20Types=*all&amp;awsf.Free%20Tier%20Categories=*all">AWS free tier</a>. Also please add your comments if you believe that something is odd or incorrect, my goal is to help and make it useful.</p>
+<p>For this blog series, I will embrace the following guiding principles:</p>
 <ul>
-<li>&lsquo;Serverless&rsquo; first: I&rsquo;ll use managed services as much as a I can so to be able to focus on the business logic and  iterate quickly.</li>
-<li>Use the &lsquo;best tool&rsquo;: By that, I mean I don&rsquo;t want to be dogmatic but pragmatic. For example, when using a Lambda function is appropriate, I will not force myself to run a container.</li>
-<li>Make it realistic</li>
+<li><strong>&lsquo;Serverless&rsquo; first</strong>: I&rsquo;ll use managed services as much as a I can so to be able to focus on the business logic and  iterate quickly.</li>
+<li><strong>Use the &lsquo;best tool&rsquo;</strong>: By that, I mean I don&rsquo;t want to be dogmatic but pragmatic. For example, when using a Lambda function is appropriate, I will not force myself to run a container.</li>
+<li><strong>Make it realistic</strong>: Part of the exercise is to be in the customer' shoes so I&rsquo;ll build the solution accordingly.</li>
+<li><strong>Meet you where you are</strong>: Although this is not a course, I will start from a beginner level and add pointers to additional content. As we progress, we will grow together to become more proficient and eventually experts!</li>
+<li><strong>Community friendy</strong>: I&rsquo;d love to get your feedback, incorporate it to make this series more exciting and will welcome your contributions during that journey.</li>
 </ul>
+<h2 id="what">What?</h2>
+<p>In this series, we will cover many aspects of building a Cloud Native Application with AWS Container services.</p>
+<h4 id="learning-by-doing"><strong>Learning by doing</strong></h4>
+<p>This Blog series is not a course and it is not designed to pass a certification. I believe that along the way, you will be skilled and experienced to take a certification but that&rsquo;s not the goal.</p>
+<p>I won&rsquo;t explain everything, I&rsquo;ll assume that you have some level of experience with containers. For example, I won&rsquo;t explain the details of the Dockerfiles I&rsquo;ll share. We will build a cool application using AWS Container services (and others) and this way, we will learn a lot. I&rsquo;ll share the code so you can reproduce it in your environment.</p>
+<p>If you want an introduction to Docker, I suggest you watch <a href="https://youtu.be/8RKbll9TVcA?t=630">this episode</a> of Containers From the Couch, a live show that my team is driving.</p>
+<p>There are several good courses about Docker. One of the AWS Heroes, <a href="https://aws.amazon.com/developer/community/heroes/nana-janashia/">Nana</a>, is offering a <a href="https://www.youtube.com/watch?v=3c-iBn73dDE">free tutorial</a> on YouTube.</p>
+<p>Interested to dive deeper on Containers? Nigel Poulton&rsquo;s <a href="https://smile.amazon.com/dp/1521822808/ref=cm_sw_r_tw_dp_HCDWTDBK8RVB1KYG7BCZ">Docker Deep Dive</a> is a reference.</p>
+<h4 id="navigating-through-the-portfolio"><strong>Navigating through the portfolio</strong></h4>
+<p>There are several options to run containers on AWS:</p>
+<ul>
+<li>Do-It-Yourself with EC2: install Docker or <a href="https://containerd.io/">containerd</a> for example. Since we want to use managed services, we won&rsquo;t implement that option.</li>
+<li><a href="https://aws.amazon.com/lightsail/">Amazon Lightsail</a></li>
+<li><a href="https://aws.amazon.com/ecs">Amazon ECS</a> and Amazon ECS Anywhere</li>
+<li><a href="https://aws.amazon.com/eks">Amazon EKS</a> and <a href="https://aws.amazon.com/eks/eks-anywhere/">Amazon EKS Anywhere</a></li>
+</ul>
+<p>There are also different tools and services (like AWS Fargate, AWS Copilot, AWS Amplify, Amazon ECR, AWS Proton&hellip;) that we will cover and use.</p>
+<p>We will review and discuss some limitations of the services and the options to work around or use other options.</p>
+<h4 id="containers-but-not-only"><strong>Containers but not only</strong></h4>
+<p>As we build a Cloud Native Application, we will need other adjacent technologies to containers: observability, service mesh, databases&hellip;
+Again, the goal is to build something close to reality.</p>
+<h2 id="the-journey-of-a-thousand-miles-begins-with-a-single-step"><em>The journey of a thousand miles begins with a single step</em></h2>
+<p>This is the beginning of an exciting exploration in the Cloud Native world. I hope you will learn interesting things - I will for sure. I am looking forward to our discussions. See you soon to start with <a href="https://aws.amazon.com/lightsail/">Amazon Lightsail</a>.</p>
 
         </div>
 
