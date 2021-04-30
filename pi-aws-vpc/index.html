@@ -194,7 +194,7 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <h4 id="initialize-the-project"><em>Initialize the project:</em></h4>
 <p>The first step will be to create a folder then initiate cdk and create the project structure:</p>
 <p><code>mkdir cdk-aws-vpc-s2s-vpn &amp;&amp; cd cdk-aws-vpc-s2s-vpn</code></p>
-<p><code>cdk-aws-vpc-s2s-vpn</code></p>
+<p><code>cdk init --language typescript</code></p>
 <p>The tool has generated several folders and file. Now we are going to bootstrap cdk and deploy a first time. Since we have not written any code yet, it will just create a CloudFormation bucket which will be used to store all the CloudFormation templates that CDK generates for you.</p>
 <p>So now we are ready! I&rsquo;ll skip the SD-WAN solution for now (maybe for a future post), we will start by using our home router.</p>
 <p><strong>Remark</strong>: I will not cover IPv6 in this article. It could be the topic of another one. Let me know if you are interested.</p>
@@ -203,7 +203,7 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <h3 id="building-the-aws-infrastructure-1">Building the AWS infrastructure</h3>
 <p>The follow diagram depicts the infrastructure we are going to build.
 <img src="images/s2s-udmp.png" alt="Site-to-Site VPN Diagram"></p>
-<script type="application/javascript" src="https://gist.github.com/rjourdan/94e6481976da3ebc1bbd0c78f0ec8c4c.js.js"></script>
+<script type="application/javascript" src="https://gist.github.com/rjourdan/94e6481976da3ebc1bbd0c78f0ec8c4c.js"></script>
 
 
         </div>
