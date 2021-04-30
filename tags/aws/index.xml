@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Thu, 29 Apr 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secure Connection between AWS VPC and a Raspberry Pi</title>
       <link>https://rjourdan.com/pi-aws-vpc/</link>
-      <pubDate>Thu, 29 Apr 2021 11:01:07 -0500</pubDate>
+      <pubDate>Fri, 30 Apr 2021 11:01:07 -0500</pubDate>
       
       <guid>https://rjourdan.com/pi-aws-vpc/</guid>
       <description>(Photo by Alina Grubnyakon Unsplash)
