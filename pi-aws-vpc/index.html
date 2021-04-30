@@ -141,7 +141,7 @@ In a recent discussion with a colleague (in fact few months back, I have been sl
                 Apr 30, 2021
                 <i class="far fa-clock clock"></i>
                 
-              4 min read
+              6 min read
               
               </span>
             </div>
@@ -190,6 +190,9 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <li>
 <p>Install the AWS CDK toolkit from a terminal session <code>npm install -g aws-cdk</code></p>
 </li>
+<li>
+<p>Install also the EC2 library that will use <code>npm install @aws-cdk/aws-ec2</code></p>
+</li>
 </ol>
 <h4 id="initialize-the-project"><em>Initialize the project:</em></h4>
 <p>The first step will be to create a folder then initiate cdk and create the project structure:</p>
@@ -203,8 +206,21 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <h3 id="building-the-aws-infrastructure-1">Building the AWS infrastructure</h3>
 <p>The follow diagram depicts the infrastructure we are going to build.
 <img src="images/s2s-udmp.png" alt="Site-to-Site VPN Diagram"></p>
+<p>Now edit the file <code>lib/cdk-aws-vpc-s2s-vpn-stack.ts</code> that was generated previously, and replace its content with the following then save.</p>
 <script type="application/javascript" src="https://gist.github.com/rjourdan/94e6481976da3ebc1bbd0c78f0ec8c4c.js"></script>
 
+<p>Let&rsquo;s deploy with <code>cdk deploy</code>! it will take few minutes to create the VPC, the public and private subnets as well as the Internet Gateway, NAT Gateway and all the VPN configuration.</p>
+<p>Once the stack is created, go to your AWS console &gt; VPC &gt; Virtual Private Network (VPN) &gt; Site-to-Site VPN Connections. Select the connection that has been created (it should be named with the name of your stack) and download the configuation. Depending on your router, you may found your vendor and platform. In the case of the UDMP, we will generate a generic configuration file.
+<img src="images/genericConfig.png" alt="Generic Config File"></p>
+<p>Your browser will download a text file with all the information we will need to configure our UDMP. So now, go to your <a href="https://unifi.ui.com">Unifi portal</a>, select your UDMP then Settings &gt; Networks &gt; Add New Network and fill the form based on the config file.</p>
+<p><img src="images/configUDMP1.png" alt="UDMP Config page 1"></p>
+<p><img src="images/configUDMP2.png" alt="UDMP Config page 2"></p>
+<p>In our case, we are not using Dynamic routing. Should you have a bigger and more complex network, this would be the way to go. Add the network and now your tunnel should be built once the UDMP sees traffic. You can ping your EC2 instance and check that everything works as planned. It will take few seconds for the connection to establish so be patient. You can also check the AWS console VPC &gt; Virtual Private Network (VPN) &gt; Site-to-Site VPN Connections and select your connection then go on the Tunnel Details tab. You will see one tunnel being up. Indeed, we have not configured a second tunnel which would be a good idea for a product environment for redundancy. Simply create a second network of type &ldquo;site-to-site&rdquo; with the other endpoint IP address documented in the config file and change the route distance to 40.</p>
+<p><img src="images/s2s-tunnel-up.png" alt="S2S VPN Tunnel Up"></p>
+<p>My task on ECS/Fargate has the IP address 10.155.0.186 and I can send a request from the Raspberry Pi to this container. Mission accomplished!
+<img src="images/curl-to-ECS-task.png" alt="Curl to ECS task"></p>
+<p>So now, let&rsquo;s try to make it the VPN connection from the Raspberry Pi itself. I removed the VPN config from the UDMP.</p>
+<h2 id="site-to-site-vpn-with-raspberry-pi-and-openswan">Site-to-Site VPN with Raspberry Pi and Openswan</h2>
 
         </div>
 
