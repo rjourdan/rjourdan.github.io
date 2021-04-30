@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 28 Apr 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secure Connection between AWS VPC and a Raspberry Pi</title>
+      <link>https://rjourdan.com/pi-aws-vpc/</link>
+      <pubDate>Thu, 29 Apr 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/pi-aws-vpc/</guid>
+      <description>(Photo by Alina Grubnyakon Unsplash)
+In a recent discussion with a colleague (in fact few months back, I have been slow on this one), they asked if I had a simple procedure to connect a Raspberry Pi running at home to a VPC on AWS.</description>
+    </item>
+    
     <item>
       <title>AWS Containers a2z - Introduction</title>
       <link>https://rjourdan.com/aws-container-a2z-intro/</link>
