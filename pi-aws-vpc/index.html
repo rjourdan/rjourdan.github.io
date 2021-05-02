@@ -141,7 +141,7 @@ In a recent discussion with a colleague (in fact few months back, I have been sl
                 Apr 30, 2021
                 <i class="far fa-clock clock"></i>
                 
-              6 min read
+              8 min read
               
               </span>
             </div>
@@ -170,6 +170,10 @@ In a recent discussion with a colleague (in fact few months back, I have been sl
 </ul>
 <p>For this exercise, I am going to run a simple container on Amazon ECS/Fargate and will call the API it presents from the Raspberry Pi. The container will be deployed in a private subnet in one of my AWS VPCs. It could be anything else like a EC2 instance for example.</p>
 <p><img src="images/main_diagram.png" alt="High-Level Diagram"></p>
+<p>I set a static IP address on the Pi so it is easier to manage.
+<code>sudo nano /etc/dhcpcd.conf</code></p>
+<script type="application/javascript" src="https://gist.github.com/rjourdan/63dfde3fc5a73f527658c276d87dab42.js"></script>
+
 <h2 id="building-the-aws-infrastructure">Building the AWS infrastructure</h2>
 <p>In the following, I&rsquo;ll assume you have no VPC already built and we will do it together.
 As always, there are multiple options to build our infrastructure on AWS: using the console, the AWS CLI, CloudFormation, Terraform&hellip; We are going to use the <a href="https://aws.amazon.com/cdk/">AWS Cloud Development Kit (CDK)</a> to build the various topologies.</p>
@@ -220,7 +224,31 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <p>My task on ECS/Fargate has the IP address 10.155.0.186 and I can send a request from the Raspberry Pi to this container. Mission accomplished!
 <img src="images/curl-to-ECS-task.png" alt="Curl to ECS task"></p>
 <p>So now, let&rsquo;s try to make it the VPN connection from the Raspberry Pi itself. I removed the VPN config from the UDMP.</p>
-<h2 id="site-to-site-vpn-with-raspberry-pi-and-openswan">Site-to-Site VPN with Raspberry Pi and Openswan</h2>
+<h2 id="site-to-site-vpn-with-raspberry-pi-and-strongswan">Site-to-Site VPN with Raspberry Pi and strongSwan</h2>
+<p>In this section, we will exactly the same infrastructure on AWS, the main difference will be that the tunnels will be formed from the Raspberry Pi. For that, we are going to install a VPN client called <a href="https://strongswan.org/">strongSwan</a>.</p>
+<p><img src="images/s2s-vpn-Pi-strongSwan.png" alt="Diagram VPN from Pi"></p>
+<p>I am going to reuse the previous setup on AWS and this time, I am going to download from the AWS console in VPC &gt; Virtual Private Network (VPN) &gt; Site-to-Site VPN Connections the configuration file customized for strongSwan.</p>
+<p><img src="images/config-strongSwan.png" alt="strongSwan config file"></p>
+<p>We need now to configure our Pi and install strongSwan. <code>sudo apt-get install strongswan</code></p>
+<p>Acknowledge the message that will be displayed and the installation will complete.
+<img src="images/strongSwan-message.png" alt="strongSwan message"></p>
+<p>Then, just follow all the intructions from the configuration file. There is a long list of instructions but they are customized to your setup so don&rsquo;t be afraid, you are in good hands.</p>
+<p>At the end of the process, you should see that both tunnels are up.</p>
+<p><img src="images/pi-vpn-up.png" alt="VPN UP"></p>
+<p>Let&rsquo;s double check on the AWS console:
+<img src="images/aws-console-tunnels-up.png" alt="AWS VPN UP"></p>
+<p>Let&rsquo;s try now to ping our ECS task from the Pi
+<img src="images/pi-ping-down.png" alt="Ping not working"></p>
+<p>What? What&rsquo;s wrong? Tunnels are up and we know that the configuration on the AWS side worked previously. So we should expect it to work.
+As we know, packets never lie so let&rsquo;s take a capture while the same ping runs in the background.</p>
+<p><img src="images/capture-eth0.png" alt="Capture eth0">
+There are two things of interest. We can see traffic going in both directions and it seems that NAT Traversal (ipsec-nat-t) is enabled. So the tunnels seem fine.</p>
+<p>Let&rsquo;s now look into the tunnels to understand what&rsquo;s going on. The ping still runs in the background.
+<img src="images/capture-tunnel.png" alt="Capture Tunnel">
+We see that traffic goes in one direction only. But the source IP address is not what I expected. It is the Tunnel1 interface&rsquo;s IP and in fact, it does make sense. However, the VPC network has no route to 169.254.70.58.
+Since, we enabled routing during the configuration with <code> net.ipv4.ip_forward = 1</code> in /etc/sysctl.conf (documented in the configuration file), let&rsquo;s test from another computer in the home LAN. This will confirm that our Pi is well connected via VPN to our VPC. I added a static route on my Mac to point towards the Pi for traffic destined to my AWS VPC: <code>sudo route -n add -net 10.155.0.0/24 10.0.1.69</code>.</p>
+<p><img src="images/ping-from-mac.png" alt="ping from Mac">
+The ping shows that the end-to-end connectivity is working and the traceroute confirms traffic is routed via the Pi. So we have to deal with the internal routing of the Pi to fix our problem now. On a traditional router, we would create a new loopback interface with an IP address in the same range than the LAN and form the VPN from that interface. To solve our problem, I am going to run a container on top the Pi and it will be my gateway to the cloud.</p>
 
         </div>
 
