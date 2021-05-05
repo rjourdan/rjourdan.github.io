@@ -254,6 +254,9 @@ We see that traffic goes in one direction only. But the source IP address is not
 <p>Now I can reach to my ECS task on AWS from the Pi:
 <img src="images/curl-success-pi.png" alt="Succesful CURL from Pi"></p>
 <p>We have now a fully functional VPN fron the Raspberry Pi that can be our local GW to the Cloud.</p>
+<h2 id="conclusion--clean-up">Conclusion &amp; clean-up</h2>
+<p>In this article, we have explored different ways to connect your home network (and more specifically a Raspberry Pi) to AWS. I will write another post about the use of ZeroTier and Wireguard.
+Don&rsquo;t forget to tear down your AWS environment. Since we used cdk to build the infrastructure, we can just use <code>cdk destroy</code> to rollback all the changes.</p>
 
         </div>
 
