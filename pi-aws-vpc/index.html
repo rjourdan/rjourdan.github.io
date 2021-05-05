@@ -232,7 +232,7 @@ As always, there are multiple options to build our infrastructure on AWS: using 
 <p>We need now to configure our Pi and install strongSwan. <code>sudo apt-get install strongswan</code></p>
 <p>Acknowledge the message that will be displayed and the installation will complete.
 <img src="images/strongSwan-message.png" alt="strongSwan message"></p>
-<p>Then, just follow all the intructions from the configuration file. There is a long list of instructions but they are customized to your setup so don&rsquo;t be afraid, you are in good hands.</p>
+<p>Then, just follow all the intructions from the configuration file. There is a long list of instructions but they are customized to your setup so don&rsquo;t be afraid, you are in good hands. I configured routing manually following steps 2# to #5. For some reasons, the script would not kick off automatically and I wanted to keep control on things anyway (you will see why towards the end&hellip;).</p>
 <p>At the end of the process, you should see that both tunnels are up.</p>
 <p><img src="images/pi-vpn-up.png" alt="VPN UP"></p>
 <p>Let&rsquo;s double check on the AWS console:
@@ -245,31 +245,15 @@ As we know, packets never lie so let&rsquo;s take a capture while the same ping 
 There are two things of interest. We can see traffic going in both directions and it seems that NAT Traversal (ipsec-nat-t) is enabled. So the tunnels seem fine.</p>
 <p>Let&rsquo;s now look into the tunnels to understand what&rsquo;s going on. The ping still runs in the background.
 <img src="images/capture-tunnel.png" alt="Capture Tunnel">
-We see that traffic goes in one direction only. But the source IP address is not what we would expect. It is the Tunnel1 interface&rsquo;s IP and in fact, it does make sense. However, the VPC network has no route to 169.254.70.58.</p>
+We see that traffic goes in one direction only. But the source IP address is not what we would expect. It is the Tunnel1 interface&rsquo;s IP and in fact, it does make sense. The system uses the interface Tunnel1 to communicate with the VPC. However, the VPC network has no route to 169.254.70.58 and this is not routable.</p>
 <p>Since, we enabled routing during the configuration with <code> net.ipv4.ip_forward = 1</code> in /etc/sysctl.conf (documented in the configuration file), let&rsquo;s test from another computer in our home LAN. This will confirm that our Pi is well connected via VPN to our VPC. I added a static route on my Mac to point towards the Pi for traffic destined to my AWS VPC: <code>sudo route -n add -net 10.155.0.0/24 10.0.1.69</code>.</p>
-<p><img src="images/ping-from-mac.png" alt="ping from Mac">
-The ping shows that the end-to-end connectivity is working and the traceroute confirms traffic is routed via the Pi. So we have to deal with the internal routing of the Pi to fix our problem now. On a traditional router, we would create a new loopback interface with an IP address in the same range than the LAN and form the VPN from that interface. In this case, I&rsquo;d like to try another approach -more elegant from my point of view-, we are going to run a container on top of the Pi and it will be our gateway to the cloud.</p>
-<p>If you have not already installed Docker on your Raspberry Pi, you can follow this <a href="https://pimylifeup.com/raspberry-pi-docker/">tutorial</a>.</p>
-<p>We are going to reuse the configuration files that were edited/created earlier and change the IP address with the one we will assign to the container. I created a new directory to save all the files we need:</p>
-<p><code>mkdir strongswan_files</code></p>
-<p><code>sudo cp /etc/ipsec.conf strongswan_files/</code></p>
-<p><code>sudo cp /etc/ipsec.secrets strongswan_files/</code></p>
-<p><code>sudo cp /etc/sysctl.conf strongswan_files/</code></p>
-<p><code>sudo cp /etc/ipsec.d/aws-updown.sh strongswan_files/</code></p>
-<p><code>sudo cp /etc/strongswan.d/charon.conf strongswan_files/</code></p>
-<p><code>sudo chown pi strongswan_files/*</code> &lt;&ndash; all files now belong to the user pi so we can edit them.</p>
-<script type="application/javascript" src="https://gist.github.com/rjourdan/17d4d0bcc03ae74b3607b686933804b3.js"></script>
-
-<script type="application/javascript" src="https://gist.github.com/rjourdan/ff163598eb880a5dc142a85fc4f999d8.js"></script>
-
-<script type="application/javascript" src="https://gist.github.com/rjourdan/391b6e59f7e1fe817e1d656c676ccc5c.js"></script>
-
-<script type="application/javascript" src="https://gist.github.com/rjourdan/bf420c67f8b0c7338397228e89da5b35.js"></script>
-
-<p>My system (Raspberry Pi 4) is 32bit so I have downloaded the Ubuntu image accordlingy: <code>docker pull arm32v7/ubuntu:18.04</code>.</p>
-<p>I still want my Raspberry to be a gateway to the cloud for my LAN so I want to bridge it on my home network. As per <a href="https://docs.docker.com/network/network-tutorial-macvlan/">Docker documentation</a>, <em>you can use the macvlan network driver to assign a MAC address to each container’s virtual network interface, making it appear to be a physical network interface directly connected to the physical network.</em></p>
-<script type="application/javascript" src="https://gist.github.com/rjourdan/29755a5dd741fb4e89d210286d5a69f6.js"></script>
-
+<p><img src="images/ping-from-mac.png" alt="ping from Mac"></p>
+<p>The ping shows that the end-to-end connectivity is working and the traceroute confirms traffic is routed via the Pi. So we have to deal with the internal routing of the Pi to fix our problem now. We are going to leverage <code>iptables</code> to force the traffic destined to our AWS VPC to use the Raspberry Pi&rsquo;s LAN IP address (<code>10.0.1.69</code>), when originating from the Pi itself. Indeed, I don&rsquo;t want that all my LAN devices are seen with the Raspberry Pi&rsquo;s IP address so I can keep control in my VPC. In the configuration file, in the section #2 Tunnel Configuration, I was given an IP range for each tunnel: <code>169.254.211.158/30</code> and <code>169.254.70.58/30</code>. I am going to use those range in my iptables rules to change the behavior.</p>
+<p><code>sudo iptables -t nat -A POSTROUTING --destination 10.155.0.0/24 --source 169.254.70.58/30 -j SNAT --to-source 10.0.1.69</code></p>
+<p><code>sudo iptables -t nat -A POSTROUTING --destination 10.155.0.0/24 --source 169.254.211.158/30 -j SNAT --to-source 10.0.1.69</code></p>
+<p>Now I can reach to my ECS task on AWS from the Pi:
+<img src="images/curl-success-pi.png" alt="Succesful CURL from Pi"></p>
+<p>We have now a fully functional VPN fron the Raspberry Pi that can be our local GW to the Cloud.</p>
 
         </div>
 
