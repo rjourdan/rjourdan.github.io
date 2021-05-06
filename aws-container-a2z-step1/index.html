@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="icon" href="/logo.png">
+	
+
+	
+		<title>AWS Containers a2z - Step 1 Lightsail | Tales of a technology enthusiast</title>
+	
+	
+	
+
+	
+		<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://rjourdan.com/aws-container-a2z-step1/cover.jpg"/>
+<meta name="twitter:title" content="AWS Containers a2z - Step 1 Lightsail"/>
+<meta name="twitter:description" content="(Photo by Bernd Dittrichon Unsplash)
+Welcome back to the AWS Containers a2z blog series! We discussed in the introduction about our goals and how we will get there."/>
+
+		<meta property="og:title" content="AWS Containers a2z - Step 1 Lightsail" />
+<meta property="og:description" content="(Photo by Bernd Dittrichon Unsplash)
+Welcome back to the AWS Containers a2z blog series! We discussed in the introduction about our goals and how we will get there." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjourdan.com/aws-container-a2z-step1/" /><meta property="og:image" content="https://rjourdan.com/aws-container-a2z-step1/cover.jpg"/><meta property="article:section" content="" />
+<meta property="article:published_time" content="2021-05-06T09:01:07-05:00" />
+<meta property="article:modified_time" content="2021-05-06T09:01:07-05:00" />
+
+
+	
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="https://rjourdan.com">
+
+            
+            <img src="/logo.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/me">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="navbar-social">
+          
+          <a href="https://twitter.com/rjourdan_net"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://github.com/rjourdan"><i class="fab fa-github social-icon" aria-hidden="true"></i></a>
+          
+          
+          <a href="https://linkedin.com/in/rjourdan"><i class="fab fa-linkedin social-icon" aria-hidden="true"></i></a>
+          
+          
+          
+          <a href="https://www.medium.com/@rjourdan"><i class="fab fa-medium social-icon" aria-hidden="true"></i></a>
+          
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+
+<div class="main-content">
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=AWS%20Containers%20a2z%20-%20Step%201%20Lightsail&url=https%3a%2f%2frjourdan.com%2faws-container-a2z-step1%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frjourdan.com%2faws-container-a2z-step1%2f" onclick="window.open(this.href, 'LinkedIn-share', 'width=550,height=435');return false;">
+        <i class="fab fa-linkedin-in "></i>
+        </a>
+        </li>
+    </ul>
+
+
+    
+        <div class="sep">
+        </div>
+        <ul>
+            <li>
+            <a  class="small smoothscroll" href="#disqus_thread"></a>
+            </li>
+        </ul>
+    
+</div>
+</div>
+      
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          
+          
+          
+          
+          <div class="row post-top-meta">
+            <div class='d-none d-md-block' style='width: 95px;'>
+              <img class="author-thumb" src="/images/author.jpg"
+                alt="Romain Jourdan">
+            </div>
+            <div class="col-xs-6 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+              <a target="_blank" class="link-dark">Romain Jourdan</a><br>
+              <span class="author-description">
+                Owner of this blog<br>
+                <i class="far fa-star"></i>
+                May 6, 2021
+                <i class="far fa-clock clock"></i>
+                
+              5 min read
+              
+              </span>
+            </div>
+          </div>
+          
+          
+          
+          
+          <h1 class="posttitle">AWS Containers a2z - Step 1 Lightsail</h1>
+        </div>
+
+        
+        
+        
+
+        
+        <div class="article-post">
+          <p><img src="cover.jpg" alt="AWS Containers a2z!">(Photo by <!-- raw HTML omitted -->Bernd Dittrich<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted -->)</p>
+<p>Welcome back to the AWS Containers a2z blog series! We discussed in the <a href="https://rjourdan.com/aws-container-a2z-intro/">introduction</a> about our goals and how we will get there. We are going to build a Cloud Native application using AWS Container services. This application will be as realistic as possible, not your standard <code>'hello-world'</code>. As we are talking about containers, we are going to build a logistic app. This logistic app will have location-based capabilities and we use <a href="https://aws.amazon.com/location/">Amazon Location Service</a> that was announced at Re:Invent 2020.
+In this first episode of the saga, as we are experimenting with containers and Location Service, we are going to leverage <a href="https://aws.amazon.com/lightsail/">Amazon Lightsail</a> to run a container in the Cloud.</p>
+<h3 id="amazon-lightsail">Amazon Lightsail</h3>
+<p>As my colleague <a href="https://nathanpeck.com/choosing-container-environment-on-aws-lightsail-ecs-eks-lambda-fargate/">Nathan Peck described it</a>, Amazon Lightsail is <em>ideal if you are new to the cloud, and just want to deploy a container on the internet without dealing with a whole lot of complexity</em>. It is a good solution to run simple containerized applications for a fixed, monthly price. The magic behind Lightsail is that you don&rsquo;t have to manage any infrastructure in the cloud (VPC, subnets, Internet gateways&hellip;), Lightsail will deploy your workload in a fully managed account with all the necessary building blocks that will be auto-magically configured for you.</p>
+<h2 id="prerequisites">Prerequisites:</h2>
+<p>Before we start, we need a few thing.</p>
+<ol>
+<li>You need an <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/">AWS account</a> with a IAM User.</li>
+<li>The AWS CLI allows you to interact with AWS services from a terminal session. Make sure you have the latest version of the AWS CLI installed on your system. (Download here for <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html">Mac</a>, for <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html">Windows</a> or for <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html">Linux</a>)</li>
+<li>A text editor or IDE of your choice. I&rsquo;ll be using <a href="https://code.visualstudio.com/">VSCode</a>.</li>
+<li><a href="https://www.docker.com/products/docker-desktop">Docker Desktop</a> installed and running on your development machine.</li>
+<li><a href="https://git-scm.com/downloads">Git</a> or the <a href="https://desktop.github.com/">GitHub Desktop</a> to clone the code from our repository.</li>
+</ol>
+<h2 id="building-and-testing-our-container">Building and testing our container</h2>
+<p>The first step will be to clone the project on your machine:
+<code>git clone https://github.com/aws-containers/aws-containers-a2z.git</code></p>
+<p>The code is located in the folder <code>step\ 1\ -\ Lightsail/app/</code>. Go to this directory and you will see three files in that folder:</p>
+<ul>
+<li><code>Dockerfile</code>: the file that describes how build the container</li>
+<li><code>location.js</code>: the actual code of the location service written in Node.js</li>
+<li><code>package.json</code>: the list of packages Node.js needed to execute the code</li>
+</ul>
+<p>Let&rsquo;s build the container (assuming you are in the <code>step\ 1\ -\ Lightsail/app/</code> folder):</p>
+<p><code>docker build . -t location-service:0.1</code>
+At the end of the process, the container image shall be ready and you can check that with the command <code>docker images</code>
+<img src="images/docker-build.png" alt="Docker Build"></p>
+<p>Before we can run this container, we need to create a role and a polocy to be able to use the Location Service.
+Go to the <a href="https://console.aws.amazon.com">AWS console</a> &gt; Identity and Access Management (IAM) &gt; Policies and let&rsquo;s create a policy called <code>LocationServicePolicy</code> with the following Permissions.</p>
+<script type="application/javascript" src="https://gist.github.com/rjourdan/8612dc896350db9b8f666024e3776438.js"></script>
+
+<p>We could restrict a bit more following the principle of Least Privilege (see the <a href="https://docs.aws.amazon.com/location/latest/developerguide/security_iam_service-with-iam.html">Amazon Location Service&rsquo;s documentation</a> to know more) but we will leave it as is for now as we will add more capabilities down the road. Next, we will create a user <code>LocationServiceUser</code> with Programmatic Access and attach the existing <code>LocationServicePolicy</code> directy. Once the user is created, download the credentials and keep them in a secure place.</p>
+<p>We are ready to run locally our container and check that the code is actually working. Use the following command to run the container locally:</p>
+<script type="application/javascript" src="https://gist.github.com/rjourdan/c377f0043c7c593065ac812cdf9daccd.js"></script>
+
+<p>You can now test with your favorite browser (or curl) <code>http//localhost:3000/searchplace/:</code> followed by the name of the place you are looking for. It could be an address, a well known site or a city.</p>
+<p><img src="images/test-localhost.png" alt="Test local container"></p>
+<p>Yay!</p>
+<h2 id="running-in-the-cloud">Running in the cloud</h2>
+<p>At this stage, we have a working container. Let&rsquo;s publish now the image in a container repository like <a href="https://gallery.ecr.aws/">Amazon ECR Public</a>. Go to the <a href="https://console.aws.amazon.com">AWS console</a> &gt; Elastic Container Registry and create a public repository. I named it location_service. Follow the intructions to push your container image to your public repository.</p>
+<p><img src="images/ecr-public-push.png" alt="ECR Public Push Commands">
+(Don&rsquo;t forget to scroll down to see all 4 commands&hellip;)</p>
+<p>Once the image is uploaded, you copy the uri and save it somewhere so we can use it with Lightsail. Connect to the
+<a href="https://lightsail.aws.amazon.com">Lightsail console</a> and create a container service. For this test, go with a Nano node (the cheapest at $7 a month). As you can see,  you can easily scale up the node size as well as the node count as your traffic grows. For this experimentation, we are going to run only one container.</p>
+<p><img src="images/lightsail-config-1.png" alt="Lightsail basic config"></p>
+<p>Next, we are going to setup a custom deployment giving it a name, the image&rsquo;s uri that we saved earlier from ECR Public, our environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION) as well as the port number (3000 in our case).</p>
+<p><img src="images/lightsail-config-2.png" alt="Lightsail deployment config"></p>
+<p>Validate the deployment and wait a few minutes for the infrastructure to be created. Very soon, you will see that it is running.</p>
+<p><img src="images/lightsail-running.png" alt="Lightsail is running"></p>
+<p>Lightsail gives you a URL for your application and you can add your own custom domain alias to point your own domain name at the Lightsail container service. Let&rsquo;s try it.</p>
+<p><img src="images/container-lightsail.png" alt="Our container is running on Lightsail"></p>
+<p>Our location service is now running in the cloud!
+Don&rsquo;t forget to clean the environment after you have completed your tests:</p>
+<ul>
+<li>Delete the ECR Public repository with your container image from the console.</li>
+<li>Terminate the Lightsail service, click on the three dots next to the Container service&rsquo;s name and click delete</li>
+</ul>
+<p><img src="images/delete-service.png" alt="Delete Container services"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In the first step, we experimented with the Amazon Location Service to verify addresses and find the location of places. We were able to run it as a simple service that we shipped as a container to the Cloud. Lightsail did the heavy lifting of creating the infrastructure for us. With Lightsail, it is possible to run several containers in a single deployment. We will explore another tool in the next post of our series: Docker Compose to deploy a multi-service application on Amazon ECS.</p>
+
+        </div>
+
+        
+        <div class="after-post-tags">
+          <ul class="tags">
+            
+            <li>
+              <a href="/tags/containers">Containers</a>
+            </li>
+            
+            <li>
+              <a href="/tags/aws">AWS</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+          
+          
+          <a class="d-block col-md-6 text-lg-right" href="https://rjourdan.com/pi-aws-vpc/">Secure Connection between AWS VPC and a Raspberry Pi &raquo;</a>
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+                           
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+            </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Romain Jourdan - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                <a href="https://rjourdan.com/disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41fec0b311d0416d9d40333187ce6b34"}'></script>
+    </body>
+</html>
