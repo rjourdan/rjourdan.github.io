@@ -186,7 +186,7 @@ In this first episode of the saga, as we are experimenting with containers and L
 <p><code>docker build . -t location-service:0.1</code>
 At the end of the process, the container image shall be ready and you can check that with the command <code>docker images</code>
 <img src="images/docker-build.png" alt="Docker Build"></p>
-<p>Before we can run this container, we need to create a role and a polocy to be able to use the Location Service.
+<p>Before we can run this container, we need to create a role and a policy to be able to use the Location Service.
 Go to the <a href="https://console.aws.amazon.com">AWS console</a> &gt; Identity and Access Management (IAM) &gt; Policies and let&rsquo;s create a policy called <code>LocationServicePolicy</code> with the following Permissions.</p>
 <script type="application/javascript" src="https://gist.github.com/rjourdan/8612dc896350db9b8f666024e3776438.js"></script>
 
@@ -218,7 +218,7 @@ Don&rsquo;t forget to clean the environment after you have completed your tests:
 </ul>
 <p><img src="images/delete-service.png" alt="Delete Container services"></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>In the first step, we experimented with the Amazon Location Service to verify addresses and find the location of places. We were able to run it as a simple service that we shipped as a container to the Cloud. Lightsail did the heavy lifting of creating the infrastructure for us. With Lightsail, it is possible to run several containers in a single deployment. We will explore another tool in the next post of our series: Docker Compose to deploy a multi-service application on Amazon ECS.</p>
+<p>In this first step, we experimented with the Amazon Location Service to verify addresses and find the location of places. We were able to run it as a simple service that we shipped as a container to the Cloud. Lightsail did the heavy lifting of creating the infrastructure for us. With Lightsail, it is possible to run several containers in a single deployment. We will explore another tool in the next post of our series: Docker Compose to deploy a multi-service application on Amazon ECS.</p>
 
         </div>
 
