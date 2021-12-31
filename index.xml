@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Thu, 06 May 2021 09:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>12-Factor-app on containers - re:Invent2021</title>
+      <link>https://rjourdan.com/12-factor-app-reinvent2021/</link>
+      <pubDate>Wed, 01 Dec 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/12-factor-app-reinvent2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Day in the life of a Developer Advocate at AWS</title>
+      <link>https://rjourdan.com/a-day-in-life-da-aws/</link>
+      <pubDate>Wed, 22 Sep 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/a-day-in-life-da-aws/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AWS Containers a2z - Step 1 Lightsail</title>
       <link>https://rjourdan.com/aws-container-a2z-step1/</link>

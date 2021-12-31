@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on Tales of a technology enthusiast</title>
+    <link>https://rjourdan.com/tags/video/</link>
+    <description>Recent content in Video on Tales of a technology enthusiast</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Romain Jourdan - All rights reserved</copyright>
+    <lastBuildDate>Wed, 01 Dec 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>12-Factor-app on containers - re:Invent2021</title>
+      <link>https://rjourdan.com/12-factor-app-reinvent2021/</link>
+      <pubDate>Wed, 01 Dec 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/12-factor-app-reinvent2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Day in the life of a Developer Advocate at AWS</title>
+      <link>https://rjourdan.com/a-day-in-life-da-aws/</link>
+      <pubDate>Wed, 22 Sep 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/a-day-in-life-da-aws/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

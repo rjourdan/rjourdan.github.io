@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rjourdan.com/12-factor-app-reinvent2021/</loc>
+    <lastmod>2021-12-01T11:01:07-05:00</lastmod>
+  </url><url>
+    <loc>https://rjourdan.com/tags/external-content/</loc>
+    <lastmod>2021-12-01T11:01:07-05:00</lastmod>
+  </url><url>
+    <loc>https://rjourdan.com/tags/</loc>
+    <lastmod>2021-12-01T11:01:07-05:00</lastmod>
+  </url><url>
+    <loc>https://rjourdan.com/</loc>
+    <lastmod>2021-12-01T11:01:07-05:00</lastmod>
+  </url><url>
+    <loc>https://rjourdan.com/tags/video/</loc>
+    <lastmod>2021-12-01T11:01:07-05:00</lastmod>
+  </url><url>
+    <loc>https://rjourdan.com/a-day-in-life-da-aws/</loc>
+    <lastmod>2021-09-22T11:01:07-05:00</lastmod>
+  </url><url>
     <loc>https://rjourdan.com/tags/aws/</loc>
     <lastmod>2021-05-06T09:01:07-05:00</lastmod>
   </url><url>
@@ -9,12 +27,6 @@
     <lastmod>2021-05-06T09:01:07-05:00</lastmod>
   </url><url>
     <loc>https://rjourdan.com/tags/containers/</loc>
-    <lastmod>2021-05-06T09:01:07-05:00</lastmod>
-  </url><url>
-    <loc>https://rjourdan.com/tags/</loc>
-    <lastmod>2021-05-06T09:01:07-05:00</lastmod>
-  </url><url>
-    <loc>https://rjourdan.com/</loc>
     <lastmod>2021-05-06T09:01:07-05:00</lastmod>
   </url><url>
     <loc>https://rjourdan.com/tags/networking/</loc>
@@ -27,9 +39,6 @@
     <lastmod>2021-04-28T11:01:07-05:00</lastmod>
   </url><url>
     <loc>https://rjourdan.com/tags/article/</loc>
-    <lastmod>2021-01-02T11:01:07-05:00</lastmod>
-  </url><url>
-    <loc>https://rjourdan.com/tags/external-content/</loc>
     <lastmod>2021-01-02T11:01:07-05:00</lastmod>
   </url><url>
     <loc>https://rjourdan.com/ultimate-sdwan/</loc>
