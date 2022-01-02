@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Romain Jourdan - All rights reserved</copyright>
-    <lastBuildDate>Wed, 01 Dec 2021 11:01:07 -0500</lastBuildDate><atom:link href="https://rjourdan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Dec 2021 04:26:37 +0200</lastBuildDate><atom:link href="https://rjourdan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 Goals</title>
+      <link>https://rjourdan.com/2022-goals/</link>
+      <pubDate>Fri, 31 Dec 2021 04:26:37 +0200</pubDate>
+      
+      <guid>https://rjourdan.com/2022-goals/</guid>
+      <description>The beginning of the year is always a good time to reflect and think about what we want to achieve. The past two years have been tough for everyone.</description>
+    </item>
+    
     <item>
       <title>12-Factor-app on containers - re:Invent2021</title>
       <link>https://rjourdan.com/12-factor-app-reinvent2021/</link>
