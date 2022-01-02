@@ -18,5 +18,78 @@
 In a recent discussion with a colleague (in fact few months back, I have been slow on this one), they asked if I had a simple procedure to connect a Raspberry Pi running at home to a VPC on AWS.</description>
     </item>
     
+    <item>
+      <title>My Ultimate SD-WAN solution</title>
+      <link>https://rjourdan.com/ultimate-sdwan/</link>
+      <pubDate>Sat, 02 Jan 2021 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/ultimate-sdwan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Riverbed SD-WAN Advanced Routing capabilities</title>
+      <link>https://rjourdan.com/ex-advanced-routing/</link>
+      <pubDate>Mon, 27 Apr 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/ex-advanced-routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What if the future of networking was networkless? part 2</title>
+      <link>https://rjourdan.com/networkless-part2/</link>
+      <pubDate>Sun, 29 Mar 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/networkless-part2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SD-WAN Datacenter Integration</title>
+      <link>https://rjourdan.com/ex-dc-integration/</link>
+      <pubDate>Wed, 18 Mar 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/ex-dc-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SteelConnect EX SD-WAN Architecture Overview</title>
+      <link>https://rjourdan.com/ex-overview/</link>
+      <pubDate>Thu, 13 Feb 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/ex-overview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What if the future of networking was networkless? part 1</title>
+      <link>https://rjourdan.com/networkless-part1/</link>
+      <pubDate>Sun, 26 Jan 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/networkless-part1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid WAN - my setup</title>
+      <link>https://rjourdan.com/hybrid-wan-my-setup/</link>
+      <pubDate>Mon, 05 Sep 2016 07:46:02 +0200</pubDate>
+      
+      <guid>https://rjourdan.com/hybrid-wan-my-setup/</guid>
+      <description>This is the second article of a series covering Hybrid WAN for home office workers.
+After presenting the benefits of the approach, I am now describing my environment and what I put in place to make it work.</description>
+    </item>
+    
+    <item>
+      <title>Hybrid wan - drivers &amp; concept</title>
+      <link>https://rjourdan.com/hybrid-wan-drivers-concept/</link>
+      <pubDate>Mon, 29 Aug 2016 07:07:57 +0200</pubDate>
+      
+      <guid>https://rjourdan.com/hybrid-wan-drivers-concept/</guid>
+      <description>This article is the first of a series that will address Hybrid WAN in particular in the context of home office worker (but valid for other use cases).</description>
+    </item>
+    
   </channel>
 </rss>

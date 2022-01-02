@@ -38,5 +38,14 @@ In a recent discussion with a colleague (in fact few months back, I have been sl
 I have been meaning to write a series of blog posts about building applications using containers on AWS for a while.</description>
     </item>
     
+    <item>
+      <title>Introducing AWS Step Functions integration with Amazon EKS</title>
+      <link>https://rjourdan.com/eks-stepfunction/</link>
+      <pubDate>Wed, 02 Dec 2020 11:01:07 -0500</pubDate>
+      
+      <guid>https://rjourdan.com/eks-stepfunction/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
