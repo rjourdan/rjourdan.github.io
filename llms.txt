@@ -1,0 +1,48 @@
+# Romain Jourdan's Blog
+
+> Personal tech blog by Romain Jourdan covering cloud architecture, networking, software engineering, and technology leadership. Written from the perspective of someone who has worked as a Developer Advocate at AWS, a networking engineer, and a technology leader.
+
+## About
+
+- [About Romain](https://rjourdan.com/me/): Background and bio
+
+## Cloud Architecture
+
+- [Secure Connection between AWS VPC and a Raspberry Pi](https://rjourdan.com/pi-aws-vpc/): Step-by-step guide to establishing a site-to-site VPN between a Raspberry Pi at home and an AWS VPC using strongSwan
+- [12-Factor App on Containers - re:Invent 2021](https://rjourdan.com/12-factor-app-reinvent2021/): A practical look at the 12-factor app methodology with building microservices on containers (AWS re:Invent talk)
+- [AWS Containers A2Z - Introduction](https://rjourdan.com/aws-container-a2z-intro/): Introduction to a series on building containerized applications on AWS
+- [AWS Step Functions integration with Amazon EKS](https://rjourdan.com/eks-stepfunction/): Launch blog for the AWS Step Functions integration with Amazon EKS
+
+## Networking
+
+- [What if the future of networking was networkless? Part 1](https://rjourdan.com/networkless-part1/): Visionary thoughts on the future of networking and whether networks as we know them will disappear
+- [What if the future of networking was networkless? Part 2](https://rjourdan.com/networkless-part2/): Continuation of the networkless future exploration
+- [Network Automation - How to Start?](https://rjourdan.com/network-automation-how-to-start/): Getting started with network automation using Python, Ansible, Docker, and Jupyter
+- [SteelConnect EX SD-WAN Architecture Overview](https://rjourdan.com/ex-overview/): Introduction to Riverbed's SD-WAN solution architecture
+- [SD-WAN Advanced Routing Capabilities](https://rjourdan.com/ex-advanced-routing/): Deep dive into SD-WAN routing features
+- [SD-WAN Datacenter Integration](https://rjourdan.com/ex-dc-integration/): How to deploy SD-WAN gateways in datacenter environments
+- [My Ultimate SD-WAN Solution](https://rjourdan.com/ultimate-sdwan/): Vision for an ideal SD-WAN deployment
+- [Hybrid WAN - Drivers & Concept](https://rjourdan.com/hybrid-wan-drivers-concept/): Hybrid WAN fundamentals and use cases for remote workers
+
+## Software Engineering
+
+- [Rethinking Full Stack Development with Kiro - Voxxed Days CERN](https://rjourdan.com/voxxed-days-cern-rethinking-fullstack-kiro/): Conference talk on rethinking full stack application development with Kiro
+- [Rethinking Full Stack Development with Kiro - Devoxx Ticino](https://rjourdan.com/devoxx-ticino-rethinking-fullstack-kiro/): Conference talk at Devoxx Ticino on modern full stack development
+
+## Leadership & Career
+
+- [What is an AWS Developer Advocate?](https://rjourdan.com/what-is-an-aws-developer-advocate/): Explaining the Developer Advocacy role at AWS
+- [A Day in the Life of a Developer Advocate at AWS](https://rjourdan.com/a-day-in-life-da-aws/): Behind the scenes of the Developer Advocate role
+- [Career Advice and the Need for Mentoring](https://rjourdan.com/career-advice-and-the-need-for-mentoring/): Reflections on mentorship in tech careers
+- [Continuous Learning](https://rjourdan.com/continous-learning/): Applying Lean/Kaizen principles to personal and professional development
+- [About Diversity](https://rjourdan.com/about-diversity/): Thoughts on diversity and inclusion in the tech industry
+
+## The Pay-It-Forward Society (Podcast)
+
+- [#001 Amanda Spencer - How to Get What You Want](https://rjourdan.com/tpifs-001-amanda-spencer/): Intentional leadership and clear, courageous communication
+- [Being Intentional in 2024](https://rjourdan.com/tpifs-being-intentional-in-2024/): Practical routines for being more intentional, focused, and impactful
+- [Build, Lead, Succeed: The Product Leader's Playbook](https://rjourdan.com/tpifs-build-lead-succeed/): The W model for strategic planning with lessons from Microsoft, Slack, and Spendesk
+
+## AWS Developers Podcast (Guest Appearances)
+
+- [Episodes 193-217](https://rjourdan.com/aws-developers-podcast-217/): Conversations on cloud development, AI coding tools, and engineering best practices
